@@ -1,7 +1,7 @@
-import { HttpLink } from "@apollo/client";
-import { registerApolloClient, ApolloClient, InMemoryCache } from "@apollo/client-integration-nextjs";
+import { ApolloClient, InMemoryCache, HttpLink } from "@apollo/client";
+import { registerApolloClient } from "@apollo/client-integration-nextjs";
 
-export const { getClient, query, PreloadQuery } = registerApolloClient(() => {
+function makeClient() {
   return new ApolloClient({
     cache: new InMemoryCache(),
     link: new HttpLink({
@@ -9,6 +9,10 @@ export const { getClient, query, PreloadQuery } = registerApolloClient(() => {
       headers: {
         "x-app-token": process.env.ERXES_APP_TOKEN ?? "",
       },
+      // Fetch credentials mode
+      fetchOptions: { cache: "no-store" },
     }),
   });
-});
+}
+
+export const { getClient, query, PreloadQuery } = registerApolloClient(makeClient);

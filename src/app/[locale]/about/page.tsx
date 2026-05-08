@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { FadeIn } from "@/components/motion/FadeIn";
 
@@ -8,20 +7,24 @@ export const metadata: Metadata = {
   description: "Learn about Taij-Khurai - premium custom furniture combining Mongolian craftsmanship with Scandinavian minimalism.",
 };
 
-export default function AboutPage() {
-  const t = useTranslations();
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
 
   const values = [
-    { title: "Quality", description: "We use only the finest materials and work with skilled craftspeople to ensure every piece meets our exacting standards." },
-    { title: "Customization", description: "Every space is unique. That's why we offer extensive customization options to ensure your furniture fits perfectly." },
-    { title: "Sustainability", description: "We source responsibly and design for longevity, creating furniture that lasts for generations, not seasons." },
+    { title: locale === "mn" ? "Чанар" : "Quality", description: locale === "mn" ? "Бид зөвхөн хамгийн сайн материал ашиглаж, мэргэжлийн гар урчуудтай хамтран ажилладаг." : "We use only the finest materials and work with skilled craftspeople." },
+    { title: locale === "mn" ? "Захиалгат" : "Customization", description: locale === "mn" ? "Бүх орон зай өвөрмөц. Тиймээс бид таны тавилгыг төгс тохируулах боломжийг олгодог." : "Every space is unique. We offer extensive customization options." },
+    { title: locale === "mn" ? "Тогтвортой байдал" : "Sustainability", description: locale === "mn" ? "Бид хариуцлагатайгаар материал авч, удаан эдлэхээр дизайн хийдэг." : "We source responsibly and design for longevity." },
   ];
 
   const team = [
-    { name: "Enkhbold G.", role: "Founder & CEO", image: "/images/team/ceo.jpg" },
-    { name: "Sarnai D.", role: "Head of Design", image: "/images/team/designer.jpg" },
-    { name: "Batbayar T.", role: "Master Craftsman", image: "/images/team/craftsman.jpg" },
-    { name: "Oyungerel M.", role: "Operations Director", image: "/images/team/operations.jpg" },
+    { name: "Enkhbold G.", role: locale === "mn" ? "Үүсгэн байгуулагч & CEO" : "Founder & CEO", image: "/images/team/ceo.jpg" },
+    { name: "Sarnai D.", role: locale === "mn" ? "Дизайны дарга" : "Head of Design", image: "/images/team/designer.jpg" },
+    { name: "Batbayar T.", role: locale === "mn" ? "Гар урлалын мастер" : "Master Craftsman", image: "/images/team/craftsman.jpg" },
+    { name: "Oyungerel M.", role: locale === "mn" ? "Үйл ажиллагааны дарга" : "Operations Director", image: "/images/team/operations.jpg" },
   ];
 
   return (
@@ -29,10 +32,10 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 px-12 max-w-[1440px] mx-auto w-full">
         <FadeIn>
-          <p className="text-xs font-semibold tracking-[4px] text-[#C9A96E] mb-4">ABOUT US</p>
+          <p className="text-xs font-semibold tracking-[4px] text-[#C9A96E] mb-4">{locale === "mn" ? "БИДНИЙ ТУХАЙ" : "ABOUT US"}</p>
         </FadeIn>
         <FadeIn delay={0.1}>
-          <h1 className="text-5xl md:text-6xl font-bold text-[#FAFAFA]">Our Story</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-[#FAFAFA]">{locale === "mn" ? "Бидний түүх" : "Our Story"}</h1>
         </FadeIn>
       </section>
 
@@ -42,10 +45,14 @@ export default function AboutPage() {
           <FadeIn className="lg:w-[600px]">
             <div className="space-y-6">
               <p className="text-[17px] leading-relaxed text-[#D4CFC9]">
-                Taij-Khurai is a modern furniture brand focused on premium custom furniture, interior solutions, and contemporary living spaces. We combine Mongolian craftsmanship with Scandinavian minimalism to create pieces that are both beautiful and functional.
+                {locale === "mn"
+                  ? "Taij-Khurai нь орчин үеийн тавилгын брэнд бөгөөд Монголын гар урлал ба Скандинавийн минимализмыг хослуулдаг."
+                  : "Taij-Khurai is a modern furniture brand focused on premium custom furniture and interior solutions."}
               </p>
               <p className="text-[17px] leading-relaxed text-[#D4CFC9]">
-                Our mission is to make high-quality, personalized furniture accessible to everyone. Whether you're furnishing a single room or an entire building, we work with you to bring your vision to life.
+                {locale === "mn"
+                  ? "Бидний зорилго бол хүн бүрд өндөр чанартай, хувь хүнд тохирсон тавилгыг хүргэх."
+                  : "Our mission is to make high-quality, personalized furniture accessible to everyone."}
               </p>
             </div>
           </FadeIn>
@@ -66,10 +73,10 @@ export default function AboutPage() {
       <section className="py-24 px-12 bg-[#111111]">
         <div className="max-w-[1440px] mx-auto">
           <FadeIn>
-            <p className="text-xs font-semibold tracking-[3px] text-[#C9A96E] mb-3">OUR VALUES</p>
+            <p className="text-xs font-semibold tracking-[3px] text-[#C9A96E] mb-3">{locale === "mn" ? "БИДНИЙ ҮНЭТ ЗҮЙЛС" : "OUR VALUES"}</p>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h2 className="text-4xl font-semibold text-[#FAFAFA] mb-12">What We Stand For</h2>
+            <h2 className="text-4xl font-semibold text-[#FAFAFA] mb-12">{locale === "mn" ? "Бид юунд итгэдэг вэ" : "What We Stand For"}</h2>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {values.map((value, i) => (
@@ -87,10 +94,10 @@ export default function AboutPage() {
       {/* Team */}
       <section className="py-24 px-12 max-w-[1440px] mx-auto w-full">
         <FadeIn>
-          <p className="text-xs font-semibold tracking-[3px] text-[#C9A96E] mb-3">OUR TEAM</p>
+          <p className="text-xs font-semibold tracking-[3px] text-[#C9A96E] mb-3">{locale === "mn" ? "БИДНИЙ БАГ" : "OUR TEAM"}</p>
         </FadeIn>
         <FadeIn delay={0.1}>
-          <h2 className="text-4xl font-semibold text-[#FAFAFA] mb-12">Meet the People Behind the Craft</h2>
+          <h2 className="text-4xl font-semibold text-[#FAFAFA] mb-12">{locale === "mn" ? "Гар урлалын ард буй хүмүүс" : "Meet the People Behind the Craft"}</h2>
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {team.map((member, i) => (

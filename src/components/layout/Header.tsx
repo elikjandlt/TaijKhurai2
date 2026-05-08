@@ -2,28 +2,45 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTranslations } from "next-intl";
 import { Search, ShoppingCart, User } from "lucide-react";
 
-function useCurrentLocale(): string {
-  const pathname = usePathname();
-  const segments = pathname.split("/");
-  return segments[1] === "en" ? "en" : "mn";
-}
+const navLabels: Record<string, Record<string, string>> = {
+  mn: {
+    home: "Нүүр",
+    collections: "Цуглуулга",
+    customFurniture: "Захиалгат тавилга",
+    aiCustomizer: "AI Захиалга",
+    portfolio: "Төслүүд",
+    about: "Бидний тухай",
+    blog: "Блог",
+    contact: "Холбоо барих",
+    bookConsultation: "Зөвлөгөө авах",
+  },
+  en: {
+    home: "Home",
+    collections: "Collections",
+    customFurniture: "Custom Furniture",
+    aiCustomizer: "AI Customizer",
+    portfolio: "Portfolio",
+    about: "About",
+    blog: "Blog",
+    contact: "Contact",
+    bookConsultation: "Book Consultation",
+  },
+};
 
-export default function Header() {
-  const t = useTranslations("nav");
-  const locale = useCurrentLocale();
+export default function Header({ locale }: { locale: string }) {
+  const t = navLabels[locale] ?? navLabels["mn"];
 
   const navItems = [
-    { label: t("home"), href: "/" },
-    { label: t("collections"), href: "/collections" },
-    { label: t("customFurniture"), href: "/services" },
-    { label: t("aiCustomizer"), href: "/ai-customizer" },
-    { label: t("portfolio"), href: "/portfolio" },
-    { label: t("about"), href: "/about" },
-    { label: t("blog"), href: "/blog" },
-    { label: t("contact"), href: "/contact" },
+    { label: t.home, href: "/" },
+    { label: t.collections, href: "/collections" },
+    { label: t.customFurniture, href: "/services" },
+    { label: t.aiCustomizer, href: "/ai-customizer" },
+    { label: t.portfolio, href: "/portfolio" },
+    { label: t.about, href: "/about" },
+    { label: t.blog, href: "/blog" },
+    { label: t.contact, href: "/contact" },
   ];
 
   return (
@@ -63,7 +80,7 @@ export default function Header() {
             href="/contact"
             className="hidden sm:flex items-center px-6 py-3 bg-[#C9A96E] text-[#0D0D0D] text-[13px] font-medium rounded-sm hover:bg-[#B8985D] transition-colors"
           >
-            {t("bookConsultation")}
+            {t.bookConsultation}
           </Link>
         </div>
       </div>

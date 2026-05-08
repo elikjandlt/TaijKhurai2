@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[33829,["/_next/static/chunks/13tvwk7qdt55j.js","/_next/static/chunks/0-s_o15.y3j.j.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"max-w-[900px] mx-auto px-6 py-16","children":[["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-[#FAFAFA] mb-4","children":"Дулаан модернизм 2026"}],["$","time",null,{"className":"text-sm text-[#9A9590] block mb-8","children":"2026 оны хоёрдугаар сарын 1"}],["$","p",null,{"className":"text-lg text-[#D4CFC9] mb-8 leading-relaxed","children":"Шинэ чиг хандлага"}],["$","div",null,{"className":"prose prose-invert max-w-none","dangerouslySetInnerHTML":{"__html":"<p>2026 онд дулаан өнгө, байгалийн материалууд түлхүү ашиглагдана.</p>"}}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"RJ5i9SEB1ActraVwZKjbz"}
+4:null

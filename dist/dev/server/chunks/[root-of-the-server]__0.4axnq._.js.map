@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 76, "column": 0}, "map": {"version":3,"sources":["file:///Users/elikjandlt/Downloads/erxes-skills-main-2/content-plugin/headless/web/output/taij-khurai/src/i18n/routing.ts"],"sourcesContent":["import { defineRouting } from \"next-intl/routing\";\n\nexport const routing = defineRouting({\n  locales: [\"mn\", \"en\"],\n  defaultLocale: \"mn\",\n});\n"],"names":["routing","locales","defaultLocale"],"mappings":";;;;AAAA;;AAEO,MAAMA,UAAU,IAAA,oWAAa,EAAC;IACnCC,SAAS;QAAC;QAAM;KAAK;IACrBC,eAAe;AACjB"}},
-    {"offset": {"line": 93, "column": 0}, "map": {"version":3,"sources":["file:///Users/elikjandlt/Downloads/erxes-skills-main-2/content-plugin/headless/web/output/taij-khurai/src/proxy.ts"],"sourcesContent":["import createMiddleware from \"next-intl/middleware\";\nimport type { NextRequest } from \"next/server\";\nimport { routing } from \"./i18n/routing\";\n\nconst handleI18nRouting = createMiddleware(routing);\n\nexport function proxy(request: NextRequest) {\n  return handleI18nRouting(request);\n}\n\nexport const config = {\n  matcher: [\"/((?!_next|_vercel|.*\\\\..*).*)\"],\n};\n"],"names":["handleI18nRouting","proxy","request","config","matcher"],"mappings":";;;;;;AAAA;AAEA;;;AAEA,MAAMA,oBAAoB,IAAA,kTAAgB,EAAC,kPAAO;AAE3C,SAASC,MAAMC,OAAoB;IACxC,OAAOF,kBAAkBE;AAC3B;AAEO,MAAMC,SAAS;IACpBC,SAAS;QAAC;KAAiC;AAC7C"}}]
-}
