@@ -14,13 +14,17 @@ export default async function BlogPage({
 }) {
   const { locale } = await params;
 
-  const res = await getClient().query({
-    query: CP_POSTS,
-    variables: { language: locale, status: "published", limit: 50 },
-  });
-  const data = res.data as { cpPosts?: Post[] } | undefined;
-
-  const posts: Post[] = data?.cpPosts ?? [];
+  let posts: Post[] = [];
+  try {
+    const res = await getClient().query({
+      query: CP_POSTS,
+      variables: { language: locale, status: "published", limit: 50 },
+    });
+    const data = res.data as { cpPosts?: Post[] } | undefined;
+    posts = data?.cpPosts ?? [];
+  } catch {
+    // CMS not available, render empty state
+  }
 
   return (
     <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-16">
@@ -65,8 +69,13 @@ export default async function BlogPage({
       </div>
 
       {posts.length === 0 && (
-        <div className="text-center py-24 text-[#9A9590]">
-          {locale === "mn" ? "Нийтлэл олдсонгүй" : "No posts found"}
+        <div className="text-center py-24">
+          <p className="text-[#9A9590] mb-4">
+            {locale === "mn" ? "Нийтлэл олдсонгүй" : "No posts found"}
+          </p>
+          <p className="text-sm text-[#5A5A5A]">
+            {locale === "mn" ? "CMS холболт шалгаж байна..." : "Checking CMS connection..."}
+          </p>
         </div>
       )}
     </div>
