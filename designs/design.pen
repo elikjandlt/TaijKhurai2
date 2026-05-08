@@ -1,0 +1,1463 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "rsku7",
+      "x": 0,
+      "y": 0,
+      "name": "Taij-Khurai Wireframe",
+      "width": 1440,
+      "fill": "#0D0D0D",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "XQpJ7",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 80,
+          "padding": [
+            0,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "q36mn",
+              "name": "logo",
+              "fill": "#FAFAFA",
+              "content": "Taij-Khurai",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "BlvQg",
+              "name": "Nav",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QWDeS",
+                  "name": "nav1",
+                  "fill": "#FAFAFA",
+                  "content": "Нүүр",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "aLsl3",
+                  "name": "nav2",
+                  "fill": "#B5B0AB",
+                  "content": "Цуглуулга",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Tp9PB",
+                  "name": "nav3",
+                  "fill": "#B5B0AB",
+                  "content": "Захиалгын тавилга",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "d1Rkw",
+                  "name": "nav4",
+                  "fill": "#B5B0AB",
+                  "content": "AI Захиалга",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "I5rul3",
+                  "name": "nav5",
+                  "fill": "#B5B0AB",
+                  "content": "Төслүүд",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "hoOfY",
+                  "name": "nav6",
+                  "fill": "#B5B0AB",
+                  "content": "Бидний тухай",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "yCAug",
+                  "name": "nav7",
+                  "fill": "#B5B0AB",
+                  "content": "Блог",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "x9tvdI",
+                  "name": "nav8",
+                  "fill": "#B5B0AB",
+                  "content": "Холбоо барих",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VgDfC",
+              "name": "Actions",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KzkTb",
+                  "name": "lang",
+                  "fill": "#9A9590",
+                  "content": "MN | EN",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "P3W70",
+                  "name": "CTA",
+                  "fill": "#C9A96E",
+                  "cornerRadius": 4,
+                  "padding": [
+                    16,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tSbId",
+                      "name": "ctaText",
+                      "fill": "#0D0D0D",
+                      "content": "Зөвлөгөө авах",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "X3nAx",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": 700,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1778220346941.png",
+            "mode": "fill"
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            120,
+            48
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "LXgIQ",
+              "name": "heroLabel",
+              "fill": "#C9A96E",
+              "content": "PREMIUM CUSTOM FURNITURE",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 4
+            },
+            {
+              "type": "text",
+              "id": "ee3kd",
+              "name": "heroTitle",
+              "fill": "#FAFAFA",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Таны орон зайд зориулсан",
+              "fontFamily": "Inter",
+              "fontSize": 64,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "goM6h",
+              "name": "heroSubtitle",
+              "fill": "#D4CFC9",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Монголын гар урлал Скандинавын минимализмтай нийлж, тавилгыг таны орон зайд тохируулан бүтээдэг.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "l8azwD",
+              "name": "HeroButtons",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wKhks",
+                  "name": "heroBtn1",
+                  "fill": "#C9A96E",
+                  "cornerRadius": 4,
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CcnCC",
+                      "name": "heroBtn1Text",
+                      "fill": "#0D0D0D",
+                      "content": "Захиалга эхлэх",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d4K9M",
+                  "name": "heroBtn2",
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FFFFFF"
+                  },
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "etvEc",
+                      "name": "heroBtn2Text",
+                      "fill": "#FAFAFA",
+                      "content": "Зөвлөгөө авах",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CBHBt",
+          "name": "Collections",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "BPYXa",
+              "name": "collHeader",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C1hfs",
+                  "name": "collLabel",
+                  "fill": "#C9A96E",
+                  "content": "ЦУГЛУУЛГА",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "ls20x",
+                  "name": "collTitle",
+                  "fill": "#FAFAFA",
+                  "content": "Орчин үеийн амьдралд зориулсан",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "jkSxd",
+                  "name": "collViewAll",
+                  "fill": "#B5B0AB",
+                  "content": "Бүгдийг харах →",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XlJ1q",
+              "name": "CollGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "enpJo",
+                  "name": "Coll1",
+                  "width": "fill_container",
+                  "height": 440,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "iN41b",
+                      "name": "coll1Img",
+                      "width": "fill_container",
+                      "height": 360,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1778220325977.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "UPcYn",
+                      "name": "coll1Title",
+                      "fill": "#FAFAFA",
+                      "content": "Зочны өрөө",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pmpQq",
+                  "name": "Coll2",
+                  "width": "fill_container",
+                  "height": 440,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ADu0f",
+                      "name": "coll2Img",
+                      "width": "fill_container",
+                      "height": 360,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1778220339664.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "aiefl",
+                      "name": "coll2Title",
+                      "fill": "#FAFAFA",
+                      "content": "Унтлагын өрөө",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o4uB1",
+                  "name": "Coll3",
+                  "width": "fill_container",
+                  "height": 440,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rNYrR",
+                      "name": "coll3Img",
+                      "width": "fill_container",
+                      "height": 360,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1778220335827.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "wdlvT",
+                      "name": "coll3Title",
+                      "fill": "#FAFAFA",
+                      "content": "Хоолны өрөө",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d7sYu",
+                  "name": "Coll4",
+                  "width": "fill_container",
+                  "height": 440,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "odwoq",
+                      "name": "coll4Img",
+                      "width": "fill_container",
+                      "height": 360,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1778220324162.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "YeNFI",
+                      "name": "coll4Title",
+                      "fill": "#FAFAFA",
+                      "content": "Оффис",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZBxHn",
+          "name": "AI Customizer",
+          "width": "fill_container",
+          "fill": "#111111",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "D55kmf",
+              "name": "AIContent",
+              "width": "fill_container",
+              "gap": 64,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HzCp0",
+                  "name": "AILeft",
+                  "width": 500,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GxYGN",
+                      "name": "aiLabel",
+                      "fill": "#C9A96E",
+                      "content": "AI ЗАХИАЛГА",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "k204RZ",
+                      "name": "aiTitle",
+                      "fill": "#FAFAFA",
+                      "textGrowth": "fixed-width",
+                      "width": 500,
+                      "content": "Зохио. Харах. Дурлах.",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "L08DBu",
+                      "name": "aiDesc",
+                      "fill": "#9A9590",
+                      "textGrowth": "fixed-width",
+                      "width": 500,
+                      "content": "Манай ухаалаг захиалгын хэрэгсэл танд материал, өнгө, хэмжээ, загвар бүрийг өөрчлөх боломж олгож, AI-ийн тусламжтайгаар бодит цагийн хуулбар болон үнийн дүнг шууд харуулна.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "amrQu",
+                      "name": "AISteps",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FmpmJ",
+                          "name": "aiStep1",
+                          "fill": "#7A756F",
+                          "content": "01  Тавилгын төрөл сонгох    02  Загвар сонгох",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "N7TIub",
+                          "name": "aiStep2",
+                          "fill": "#7A756F",
+                          "content": "03  Хэмжээ оруулах    04  Материал & өнгө сонгох",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "YkaLn",
+                          "name": "aiStep3",
+                          "fill": "#7A756F",
+                          "content": "05  AI хуулбар авах    06  Үнийн дүн авах",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XOvJN",
+                      "name": "aiBtn",
+                      "fill": "#C9A96E",
+                      "cornerRadius": 4,
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kQI6O",
+                          "name": "aiBtnText",
+                          "fill": "#0D0D0D",
+                          "content": "Захиалгын хэрэгсэл ашиглах",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LguJN",
+                  "name": "AIRight",
+                  "width": "fill_container",
+                  "height": 500,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1778220331447.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12,
+                  "layout": "vertical"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dXO4n",
+          "name": "Portfolio",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "CkZZr",
+              "name": "portHeader",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TzTUZ",
+                  "name": "portLabel",
+                  "fill": "#C9A96E",
+                  "content": "ТӨСЛҮҮД",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "d2Fqv",
+                  "name": "portTitle",
+                  "fill": "#FAFAFA",
+                  "content": "Өөрчлөгдсөн орон зайнууд",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "kdfQr",
+                  "name": "portViewAll",
+                  "fill": "#B5B0AB",
+                  "content": "Бүх төслүүд →",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WXKLD",
+              "name": "PortGrid",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HWoln",
+                  "name": "port1",
+                  "width": "fill_container",
+                  "height": 500,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1778220328375.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "frame",
+                  "id": "wmeBx",
+                  "name": "port2",
+                  "width": "fill_container",
+                  "height": 500,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1778220334524.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "frame",
+                  "id": "mtitp",
+                  "name": "port3",
+                  "width": "fill_container",
+                  "height": 500,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1778220332012.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sCMER",
+          "name": "Testimonials",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            48
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "HkhQ3",
+              "name": "testLabel",
+              "fill": "#C9A96E",
+              "content": "СЭТГЭГДЭЛҮҮД",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "kkR89",
+              "name": "testTitle",
+              "fill": "#FAFAFA",
+              "content": "Манай үйлчлүүлэгчид юу гэж хэлдэг вэ",
+              "fontFamily": "Inter",
+              "fontSize": 36,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "t9sTm",
+              "name": "TestGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tovTh",
+                  "name": "Test1",
+                  "width": "fill_container",
+                  "fill": "#161616",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 36,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XW4ys",
+                      "name": "test1Quote",
+                      "fill": "#D4CFC9",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Захиалгын процесс маш хялбар байсан. Манай шинэ зочны өрөө бидний хүссэнээр бүтсэн мэт санагддаг.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "N8kfjm",
+                      "name": "test1Author",
+                      "fill": "#FAFAFA",
+                      "content": "Ариунaa Б. — Орон сууцны эзэмшигч, Улаанбаатар",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "h5fsf9",
+                  "name": "Test2",
+                  "width": "fill_container",
+                  "fill": "#161616",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 36,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bh72u",
+                      "name": "test2Quote",
+                      "fill": "#D4CFC9",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Дотоод засал чимэглэлийн зураачийн хувьд найдвартай хамтрагч хэрэгтэй. Тайж-Хурай миний үйлчлүүлэгчдэд таалагддаг.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jmz6O",
+                      "name": "test2Author",
+                      "fill": "#FAFAFA",
+                      "content": "Бат-Эрдэнэ Т. — Дотоод засал чимэглэлийн зураач",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "j44sH",
+                  "name": "Test3",
+                  "width": "fill_container",
+                  "fill": "#161616",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 36,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AP1dD",
+                      "name": "test3Quote",
+                      "fill": "#D4CFC9",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Бид 45 орон сууцыг тавилгаар хангасан. Чанар, үйлчилгээ бүх хүлээлтээс давсан.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PSOgO",
+                      "name": "test3Author",
+                      "fill": "#FAFAFA",
+                      "content": "Тогтох С. — Орон сууцны хөгжүүлэгч",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MCSnc",
+          "name": "Blog",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "AKipu",
+              "name": "blogHeader",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "g7QFA",
+                  "name": "blogLabel",
+                  "fill": "#C9A96E",
+                  "content": "ОНЦЛОХ",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "HP78v",
+                  "name": "blogTitle",
+                  "fill": "#FAFAFA",
+                  "content": "Дизайны санаа & Чиг хандлага",
+                  "fontFamily": "Inter",
+                  "fontSize": 36,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "PoAyT",
+                  "name": "blogViewAll",
+                  "fill": "#B5B0AB",
+                  "content": "Бүх нийтлэл →",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WJWai",
+              "name": "BlogGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "z4CU92",
+                  "name": "Blog1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fAfWU",
+                      "name": "blog1Img",
+                      "width": "fill_container",
+                      "height": 260,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1778220333815.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "DLSpT",
+                      "name": "blog1Title",
+                      "fill": "#FAFAFA",
+                      "content": "Төгс буйдан сонгох 5 зөвлөмж",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CPjSg",
+                      "name": "blog1Meta",
+                      "fill": "#9A9590",
+                      "content": "Дотоод засал — 5 мин унших",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Y0b71g",
+                  "name": "Blog2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Lr5aY",
+                      "name": "blog2Img",
+                      "width": "fill_container",
+                      "height": 260,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1778220325420.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "K1s6T6",
+                      "name": "blog2Title",
+                      "fill": "#FAFAFA",
+                      "content": "Дулаан модернизм: 2026 чиг хандлага",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "z4faFU",
+                      "name": "blog2Meta",
+                      "fill": "#9A9590",
+                      "content": "Чиг хандлага — 4 мин унших",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "x8peyZ",
+                  "name": "Blog3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "D05w0",
+                      "name": "blog3Img",
+                      "width": "fill_container",
+                      "height": 260,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1778220326978.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y7TZne",
+                      "name": "blog3Title",
+                      "fill": "#FAFAFA",
+                      "content": "Жижиг орон зайг хэрхэн ашиглах вэ",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uofS9",
+                      "name": "blog3Meta",
+                      "fill": "#9A9590",
+                      "content": "Зөвлөмж — 6 мин унших",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gfEyo",
+          "name": "CTA",
+          "width": "fill_container",
+          "fill": "#C9A96E",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            80,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "kPsYJ",
+              "name": "ctaTitle",
+              "fill": "#0D0D0D",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Төгс тавилга бүтээхэд бэлэн үү?",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 48,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "MfFNq",
+              "name": "ctaSubtitle",
+              "fill": "#5A4A3A",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Мянга мянган орон сууцны эзэмшигч, зураач, хөгжүүлэгч Тайж-Хурайг итгэдэг.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "RYIXH",
+              "name": "ctaBtn2",
+              "fill": "#0D0D0D",
+              "cornerRadius": 4,
+              "padding": [
+                20,
+                40
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "a4RKY",
+                  "name": "ctaBtn2Text",
+                  "fill": "#FAFAFA",
+                  "content": "Захиалга эхлэх →",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Aoo6m",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#0D0D0D",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "cq63w",
+              "name": "FooterTop",
+              "width": "fill_container",
+              "gap": 64,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Nsvad",
+                  "name": "FooterBrand",
+                  "width": 320,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "c8HrYy",
+                      "name": "footerLogo",
+                      "fill": "#FAFAFA",
+                      "content": "Taij-Khurai",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "G3RT3",
+                      "name": "footerDesc",
+                      "fill": "#9A9590",
+                      "textGrowth": "fixed-width",
+                      "width": 320,
+                      "content": "Танд зориулсан премиум захиалгын тавилга. Монголын гар урлал Скандинавын минимализмтай уулзсан нь.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sTL09",
+                  "name": "FooterLinks",
+                  "width": "fill_container",
+                  "gap": 48,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "r1QQYp",
+                      "name": "FooterCol1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l6sWnz",
+                          "name": "footerCol1Title",
+                          "fill": "#FAFAFA",
+                          "content": "Судлах",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LeeLd",
+                          "name": "footerCol1Link1",
+                          "fill": "#9A9590",
+                          "content": "Collections",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hblRe",
+                          "name": "footerCol1Link2",
+                          "fill": "#9A9590",
+                          "content": "Custom Furniture",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uQVXC",
+                          "name": "footerCol1Link3",
+                          "fill": "#9A9590",
+                          "content": "AI Customizer",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nDo49",
+                          "name": "footerCol1Link4",
+                          "fill": "#9A9590",
+                          "content": "Portfolio",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "w80a6p",
+                      "name": "FooterCol2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FEz41",
+                          "name": "footerCol2Title",
+                          "fill": "#FAFAFA",
+                          "content": "Компани",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "T5XoI6",
+                          "name": "footerCol2Link1",
+                          "fill": "#9A9590",
+                          "content": "About Us",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "O13HTE",
+                          "name": "footerCol2Link2",
+                          "fill": "#9A9590",
+                          "content": "Blog / Inspiration",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "e3QpP",
+                          "name": "footerCol2Link3",
+                          "fill": "#9A9590",
+                          "content": "Contact",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kVH0d",
+                      "name": "FooterCol3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "z3Zb3",
+                          "name": "footerCol3Title",
+                          "fill": "#FAFAFA",
+                          "content": "Дэмжлэг",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Wy0UJ",
+                          "name": "footerCol3Link1",
+                          "fill": "#9A9590",
+                          "content": "FAQ",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f8jfg9",
+                          "name": "footerCol3Link2",
+                          "fill": "#9A9590",
+                          "content": "Delivery",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qdrpu",
+                          "name": "footerCol3Link3",
+                          "fill": "#9A9590",
+                          "content": "Product Care",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zZhRb",
+                          "name": "footerCol3Link4",
+                          "fill": "#9A9590",
+                          "content": "Warranty",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qj334",
+              "name": "FooterBottom",
+              "width": "fill_container",
+              "stroke": {
+                "thickness": 1,
+                "fill": "#ffffff1a"
+              },
+              "padding": [
+                16,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iRFbR",
+                  "name": "footerRights",
+                  "fill": "#5A5A5A",
+                  "content": "© 2026 Taij-Khurai. Бүх эрх хуулиар хамгаалагдсан.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "pHAqW",
+                  "name": "FooterLegal",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SXHnR",
+                      "name": "footerLegal1",
+                      "fill": "#5A5A5A",
+                      "content": "Privacy Policy",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aYIV7",
+                      "name": "footerLegal2",
+                      "fill": "#5A5A5A",
+                      "content": "Terms of Service",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TaPwS",
+                      "name": "footerLegal3",
+                      "fill": "#5A5A5A",
+                      "content": "Cookie Policy",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
