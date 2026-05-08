@@ -1,0 +1,44 @@
+[
+  {
+    "section": "about",
+    "name": "Бидний тухай",
+    "slug": "about",
+    "description": "Taij-Khurai бол Монголын гар урлал болон Скандинавын минимализмыг хослуулсан премиум захиалгын тавилгын брэнд юм.",
+    "content": "<h1>Бидний тухай</h1>\n<p>Taij-Khurai нь орчин үеийн тавилга, дотоод заслын шийдэл, орчин үеийн амьдрах орон зайд анхаардаг брэнд юм. Бид Монголын гар урлал болон Скандинавын минимализмыг хослуулж, үзэсгэлэнтэй бөгөөд ашигтай тавилгыг бүтээдэг.</p>\n<p>Бидний зорилго бол өндөр чанартай, хувийн хэрэгцээнд нийцсэн тавилгыг хүн бүрт хүртээмжтэй болгох юм. Та ганц өрөөгөө эсвэл бүхэлдээ барилгыг засахыг хүсч байсан ч, бид таны харааг бодит болгоход тань тусална.</p>",
+    "translations": [
+      {
+        "language": "en",
+        "title": "About Us",
+        "content": "<h1>About Us</h1>\n<p>Taij-Khurai is a modern furniture brand focused on premium custom furniture, interior solutions, and contemporary living spaces. We combine Mongolian craftsmanship with Scandinavian minimalism to create pieces that are both beautiful and functional.</p>\n<p>Our mission is to make high-quality, personalized furniture accessible to everyone. Whether you're furnishing a single room or an entire building, we work with you to bring your vision to life.</p>"
+      }
+    ]
+  },
+  {
+    "section": "services",
+    "name": "Үйлчилгээ",
+    "slug": "services",
+    "description": "Захиалгын тавилга, дотоод заслын шийдэл, худалдааны төслүүд, угсралт болон хүргэлтийн үйлчилгээ.",
+    "content": "<h1>Манай үйлчилгээ</h1>\n<h2>1. Захиалгын тавилга</h2>\n<p>Таны хэрэгцээнд нийцсэн тавилгыг зохион бүтээхээс эхлээд дуусгах хүртэл бид таньд тусална.</p>\n<h2>2. Дотоод заслын шийдэл</h2>\n<p>Манай дизайны баг тантай хамтран бүхэлдээ дотоод заслын орон зайг бүтээхэд тусална.</p>\n<h2>3. Худалдааны төслүүд</h2>\n<p>Бид бизнес, зочид буудал, орон сууцны хөгжүүлэгчидтэй хамтран ажилладаг.</p>\n<h2>4. Угсралт болон хүргэлт</h2>\n<p>Манай мэргэжлийн угсралт, хүргэлтийн үйлчилгээ таны тавилгыг төгс хэвээр нь авчирна.</p>",
+    "translations": [
+      {
+        "language": "en",
+        "title": "Services",
+        "content": "<h1>Our Services</h1>\n<h2>1. Custom Furniture Design</h2>\n<p>From concept to completion, we design furniture tailored to your exact specifications.</p>\n<h2>2. Interior Solutions</h2>\n<p>Our design team works with you to create cohesive interior spaces.</p>\n<h2>3. Commercial Projects</h2>\n<p>We partner with businesses, hotels, and real estate developers.</p>\n<h2>4. Installation & Delivery</h2>\n<p>White-glove delivery and professional installation services.</p>"
+      }
+    ]
+  },
+  {
+    "section": "contact",
+    "name": "Холбоо барих",
+    "slug": "contact",
+    "description": "Taij-Khurai-тай холбоо барих, зөвлөгөө авах, дэмжлэг авах.",
+    "content": "<h1>Холбоо барих</h1>\n<p>Манай баг тантай холбоо барихыг хүлээж байна. Доорх маягтыг бөглөөд 24 цагийн дотор хариу өгнө.</p>\n<h2>Хаяг</h2>\n<p>Taij-Khurai Showroom<br/>Хан-Уул дүүрэг, Улаанбаатар<br/>Монгол</p>\n<h2>Утас</h2>\n<p>+976 11 33 4567<br/>+976 99 88 7654</p>\n<h2>Имэйл</h2>\n<p>hello@taijkhurai.mn<br/>info@taijkhurai.mn</p>",
+    "translations": [
+      {
+        "language": "en",
+        "title": "Contact Us",
+        "content": "<h1>Contact Us</h1>\n<p>Fill out the form below and our team will get back to you within 24 hours.</p>\n<h2>Address</h2>\n<p>Taij-Khurai Showroom<br/>Khan-Uul District, Ulaanbaatar<br/>Mongolia</p>\n<h2>Phone</h2>\n<p>+976 11 33 4567<br/>+976 99 88 7654</p>\n<h2>Email</h2>\n<p>hello@taijkhurai.mn<br/>info@taijkhurai.mn</p>"
+      }
+    ]
+  }
+]

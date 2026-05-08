@@ -1,0 +1,47 @@
+{
+  "category": { "name": "Блог", "slug": "blog", "translations": [{ "language": "en", "title": "Blog" }] },
+  "posts": [
+    {
+      "title": "Төгс буйдан сонгох 5 зөвлөмж",
+      "slug": "perfect-sofa-guide",
+      "excerpt": "Зочны өрөөний буйданг сонгохдоо анхаарах 5 чухал зүйлсийг хуваалцъя.",
+      "content": "<h1>Төгс буйдан сонгох 5 зөвлөмж</h1>\n<p>Зочны өрөөний буйдан нь таны гэрийн төв цэг бөгөөд зөв сонголт хийх нь чухал. Энэ нийтлэлд бид хэмжээ, материал, загвар, өнгө, үнийн хүрээний талаар зөвлөгөө өгнө.</p>\n<h2>1. Хэмжээ зөв тодорхойлох</h2>\n<p>Өрөөний хэмжээтэй уялдсан буйдан сонгох нь хамгийн чухал. Хэт том буйдан өрөөг багасгаж, хэт жижиг нь хоосон харагдуулна.</p>\n<h2>2. Материал сонголт</h2>\n<p>Арьс, даавуу, хөвөн гэх мэт материал бүр өөрийн гэсэн давуу талтай. Амьтадтай бол зурагдахад тэсвэртэй материал сонгоорой.</p>\n<h2>3. Загвар ба хэв маяг</h2>\n<p>Минималист, скандинав, эсвэл классик загвар гэх мэт өөрийн дотоод засалд тохирсон буйдан сонгоорой.</p>",
+      "translations": [
+        {
+          "language": "en",
+          "title": "5 Tips for Selecting the Perfect Sofa",
+          "excerpt": "5 essential things to consider when choosing a living room sofa.",
+          "content": "<h1>5 Tips for Selecting the Perfect Sofa</h1>\n<p>The living room sofa is the centerpiece of your home, and making the right choice is crucial. In this article, we cover size, material, style, color, and budget considerations.</p>\n<h2>1. Get the Size Right</h2>\n<p>Choosing a sofa that fits your room dimensions is the most important factor. Too large and it overwhelms the space; too small and it looks empty.</p>\n<h2>2. Material Selection</h2>\n<p>Leather, fabric, and cotton each have their own advantages. If you have pets, choose a scratch-resistant material.</p>\n<h2>3. Style and Aesthetic</h2>\n<p>Choose a sofa that matches your interior style — minimalist, Scandinavian, or classic.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Дулаан модернизм: 2026 чиг хандлага",
+      "slug": "warm-modernism-2026",
+      "excerpt": "2026 оны тавилгын дизайны гол чиг хандлага — дулаан модернизм.",
+      "content": "<h1>Дулаан модернизм: 2026 чиг хандлага</h1>\n<p>2026 онд тавилгын дизайн хүйтэн минимализмаас дулаан, амьд орон зай руу шилжиж байна. Мод, байгалийн материал, зөөлөн өнгөтэй уулзах нь энэ жилийн гол чиг хандлага юм.</p>\n<h2>Мод болон байгалийн материал</h2>\n<p>Байгалийн мод, чулуу, хөвөн зэрэг материалууд орчин үеийн тавилгад дахин эргэж ирж байна.</p>\n<h2>Зөөлөн өнгийн палитр</h2>\n<p>Бэж, саарал, оливын ногоон зэрэг дулаан, тайвшруулах өнгөнүүд 2026 онд тренд болно.</p>",
+      "translations": [
+        {
+          "language": "en",
+          "title": "Warm Modernism: 2026 Trends",
+          "excerpt": "The key furniture design trend for 2026 — warm modernism.",
+          "content": "<h1>Warm Modernism: 2026 Trends</h1>\n<p>In 2026, furniture design is shifting from cold minimalism toward warm, livable spaces. Natural wood, organic materials, and soft colors are the defining trends of the year.</p>\n<h2>Wood and Natural Materials</h2>\n<p>Natural wood, stone, and cotton are making a strong comeback in contemporary furniture.</p>\n<h2>Soft Color Palettes</h2>\n<p>Warm beige, soft gray, and olive green are trending colors that create calming environments.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Жижиг орон зайг хэрхэн ашиглах вэ",
+      "slug": "optimize-small-spaces",
+      "excerpt": "Жижиг байранд амьдрахад тавилга сонголт чухал. Энэ нийтлэлд бид зөвлөгөө өгнө.",
+      "content": "<h1>Жижиг орон зайг хэрхэн ашиглах вэ</h1>\n<p>Жижиг байранд амьдрах нь тавилга сонголтод илүү анхаарал хандуулахыг шаарддаг. Олон үүрэгтэй тавилга, зөв хадгалалт, гэрэлтүүлэг нь жижиг орон зайг том, тав тухтай харагдуулна.</p>\n<h2>Олон үүрэгтэй тавилга</h2>\n<p>Ор дэрэнцэр, хадгалалттай ширээ, нээгддэг буйдан зэрэг нь нэг тавилга олон зүйлийг хийх боломж олгоно.</p>\n<h2>Толь ба гэрэлтүүлэг</h2>\n<p>Толь болон сайн гэрэлтүүлэг нь өрөөг илүү том, нээлттэй харагдуулдаг.</p>",
+      "translations": [
+        {
+          "language": "en",
+          "title": "How to Optimize Small Spaces",
+          "excerpt": "Furniture selection is crucial for small apartment living. Tips in this article.",
+          "content": "<h1>How to Optimize Small Spaces</h1>\n<p>Living in a small apartment requires more attention to furniture choices. Multi-functional furniture, smart storage, and proper lighting can make a small space feel large and comfortable.</p>\n<h2>Multi-Functional Furniture</h2>\n<p>Storage beds, desk with shelves, and convertible sofas let one piece of furniture serve multiple purposes.</p>\n<h2>Mirrors and Lighting</h2>\n<p>Mirrors and good lighting make rooms appear larger and more open.</p>"
+        }
+      ]
+    }
+  ]
+}
