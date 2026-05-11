@@ -1,5 +1,6 @@
 1:"$Sreact.fragment"
-2:I[33829,["/_next/static/chunks/13tvwk7qdt55j.js","/_next/static/chunks/0-s_o15.y3j.j.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"pt-32 pb-16 px-12 max-w-[1440px] mx-auto","children":[["$","h1",null,{"className":"text-5xl font-bold text-[#FAFAFA] mb-8","children":"AI Customizer"}],["$","p",null,{"className":"text-lg text-[#9A9590]","children":"Coming soon — design your perfect furniture piece with our AI-powered tool."}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"1JU9l9pc8yXdqT8Nh5tbN"}
-4:null
+2:I[46839,["/_next/static/chunks/13tvwk7qdt55j.js","/_next/static/chunks/16stkz4cf.w6w.js","/_next/static/chunks/0b-1k_e~p7meq.js","/_next/static/chunks/0blyzvzb97tnn.js"],"default"]
+3:I[33829,["/_next/static/chunks/13tvwk7qdt55j.js","/_next/static/chunks/16stkz4cf.w6w.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"locale":"mn"}],[["$","script","script-0",{"src":"/_next/static/chunks/0blyzvzb97tnn.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"WBbOK2WbXFEOG3ABPAKBa"}
+5:null

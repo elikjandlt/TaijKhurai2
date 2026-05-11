@@ -6,23 +6,27 @@
     "aiCustomizer": "AI Customizer",
     "portfolio": "Portfolio",
     "about": "About",
-    "blog": "Blog / Inspiration",
+    "blog": "Blog",
     "contact": "Contact",
-    "bookConsultation": "Book Consultation",
-    "search": "Search",
-    "cart": "Cart",
-    "account": "Account"
+    "bookConsultation": "Book Consultation"
+  },
+  "footer": {
+    "description": "Mongolian craftsmanship meets Scandinavian minimalism. Premium custom furniture brand.",
+    "explore": "Explore",
+    "company": "Company",
+    "support": "Support",
+    "rights": "© 2026 Taij-Khurai. All rights reserved."
   },
   "hero": {
     "label": "PREMIUM CUSTOM FURNITURE",
-    "title": "Crafted for Your Space",
-    "subtitle": "Mongolian craftsmanship meets Scandinavian minimalism. Design, visualize, and order — all in one seamless experience.",
-    "ctaPrimary": "Start Customizing",
+    "title": "Designed for Your Space",
+    "subtitle": "Mongolian craftsmanship meets Scandinavian minimalism. Design, visualize, and order custom furniture tailored to your space.",
+    "ctaPrimary": "AI Customizer",
     "ctaSecondary": "Book Consultation"
   },
   "collections": {
     "label": "COLLECTIONS",
-    "title": "Designed for Modern Living",
+    "title": "Curated for Every Space",
     "viewAll": "View All →",
     "livingRoom": "Living Room",
     "bedroom": "Bedroom",
@@ -30,56 +34,49 @@
     "office": "Office"
   },
   "customization": {
-    "label": "AI CUSTOMIZATION",
-    "title": "Design It. See It. Love It.",
-    "description": "Our intelligent customization tool lets you personalize every detail — from materials and colors to dimensions and style — with real-time AI-generated previews and instant pricing.",
-    "step1": "01  Select furniture type",
-    "step2": "02  Choose your style",
-    "step3": "03  Set dimensions",
-    "step4": "04  Pick materials \u0026 colors",
-    "step5": "05  Get AI preview",
-    "step6": "06  Receive instant estimate",
-    "cta": "Try the Customizer"
+    "label": "AI CUSTOMIZER",
+    "title": "Design. Visualize. Love.",
+    "description": "Our AI assistant takes your dimensions, color, and material preferences to generate furniture designs tailored to your space.",
+    "step1": "1. Enter Dimensions",
+    "step2": "2. Choose Color",
+    "step3": "3. Choose Material",
+    "step4": "4. Choose Style",
+    "step5": "5. View in 3D",
+    "step6": "6. Place Order",
+    "cta": "Start AI Customizer"
   },
   "portfolio": {
     "label": "PORTFOLIO",
-    "title": "Transformed Spaces",
-    "viewAll": "View All Projects →"
+    "title": "Recent Work",
+    "viewAll": "View All →"
   },
   "testimonials": {
     "label": "TESTIMONIALS",
-    "title": "What Our Clients Say",
-    "quote1": "The customization process was seamless. Our new living room feels like it was designed specifically for us.",
-    "author1": "Ariunaa B.",
-    "role1": "Homeowner, Ulaanbaatar",
-    "quote2": "As an interior designer, I need reliable partners. Taij-Khurai delivers exceptional quality my clients love.",
-    "author2": "Bat-Erdene T.",
-    "role2": "Interior Designer",
-    "quote3": "We furnished 45 apartments. The consistency, quality, and service exceeded all our expectations.",
-    "author3": "Togtokh S.",
-    "role3": "Real Estate Developer"
+    "title": "What Clients Say",
+    "quote1": "Taij-Khurai completely transformed our living room. The design, quality, and service were all exceptional.",
+    "author1": "Batbayar G.",
+    "role1": "Homeowner",
+    "quote2": "The custom furniture fits our office perfectly. Our employees are amazed by the quality.",
+    "author2": "Sarnai D.",
+    "role2": "CEO, TechStart",
+    "quote3": "They helped us refresh our old furniture. Mongolian craftsmanship is incredible.",
+    "author3": "Enkhbold T.",
+    "role3": "Designer"
   },
   "blog": {
-    "label": "INSPIRATION",
-    "title": "Design Ideas \u0026 Trends",
-    "viewAll": "View All Articles →",
-    "post1": "5 Tips for Selecting the Perfect Sofa",
-    "meta1": "Interior Design — 5 min read",
-    "post2": "Warm Modernism: 2026 Trends",
-    "meta2": "Trends — 4 min read",
-    "post3": "How to Optimize Small Spaces",
-    "meta3": "Tips — 6 min read"
+    "label": "BLOG",
+    "title": "Featured Articles",
+    "viewAll": "View All →",
+    "post1": "The Perfect Sofa Guide",
+    "meta1": "2026 Trends",
+    "post2": "Warm Modernism 2026",
+    "meta2": "New Trends",
+    "post3": "Optimizing Small Spaces",
+    "meta3": "Tips"
   },
   "cta": {
-    "title": "Ready to Create Your Perfect Piece?",
-    "subtitle": "Join thousands of homeowners, designers, and developers who trust Taij-Khurai.",
-    "button": "Start Customizing →"
-  },
-  "footer": {
-    "description": "Premium custom furniture designed around you. Mongolian craftsmanship meets Scandinavian minimalism.",
-    "explore": "Explore",
-    "company": "Company",
-    "support": "Support",
-    "rights": "© 2026 Taij-Khurai. All rights reserved."
+    "title": "Ready to Create Your Perfect Furniture?",
+    "subtitle": "Connect with our AI assistant today and get a free design tailored to your space.",
+    "button": "Start AI Customizer"
   }
 }

@@ -9,7 +9,7 @@ function makeClient() {
     link: new HttpLink({
       uri: process.env.NEXT_PUBLIC_ERXES_ENDPOINT ?? "",
       headers: {
-        "erxes-app-token": process.env.NEXT_PUBLIC_ERXES_APP_TOKEN ?? "",
+        "x-app-token": process.env.NEXT_PUBLIC_ERXES_APP_TOKEN ?? "",
       },
     }),
   });

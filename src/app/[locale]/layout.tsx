@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { CartProvider } from "@/lib/cart-context";
+import { AuthProvider } from "@/lib/auth-context";
+import { routing } from "@/i18n/routing";
 import "../globals.css";
 
 const inter = Inter({
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return [{ locale: "mn" }, { locale: "en" }];
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
@@ -31,9 +34,13 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[#0D0D0D] text-[#FAFAFA]">
-        <Header locale={locale} />
-        <main className="flex-1 pt-20">{children}</main>
-        <Footer locale={locale} />
+        <AuthProvider>
+          <CartProvider>
+            <Header />
+            <main className="flex-1 pt-20">{children}</main>
+            <Footer />
+          </CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );

@@ -1,7 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { useEffect, useRef, useState } from "react";
 
 interface FadeInProps {
   children: React.ReactNode;
@@ -11,26 +10,59 @@ interface FadeInProps {
   once?: boolean;
 }
 
-const directionVariants = {
-  up:    { hidden: { opacity: 0, y: 24 },  visible: { opacity: 1, y: 0 } },
-  down:  { hidden: { opacity: 0, y: -16 }, visible: { opacity: 1, y: 0 } },
-  left:  { hidden: { opacity: 0, x: -24 }, visible: { opacity: 1, x: 0 } },
-  right: { hidden: { opacity: 0, x: 24 },  visible: { opacity: 1, x: 0 } },
-  none:  { hidden: { opacity: 0 },          visible: { opacity: 1 } },
-} as const;
-
 export function FadeIn({ children, delay = 0, direction = "up", className, once = true }: FadeInProps) {
-  const { ref, inView } = useInView({ triggerOnce: once, threshold: 0.1 });
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(true); // visible by default for SSR
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+    setIsVisible(false); // start hidden after mount, then animate in
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          if (once) observer.unobserve(el);
+        } else if (!once) {
+          setIsVisible(false);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [once]);
+
+  const transforms: Record<string, string> = {
+    up: "translateY(24px)",
+    down: "translateY(-16px)",
+    left: "translateX(-24px)",
+    right: "translateX(24px)",
+    none: "none",
+  };
+
+  // Before mount: render visible with no transform (SSR-safe)
+  // After mount: animate from hidden to visible
+  const style = hasMounted
+    ? {
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "translate(0, 0)" : transforms[direction],
+        transition: `opacity 0.4s ease ${delay}s, transform 0.4s ease ${delay}s`,
+      }
+    : {
+        opacity: 1,
+        transform: "translate(0, 0)",
+      };
+
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={directionVariants[direction]}
-      transition={{ duration: 0.6, delay, ease: [0.4, 0, 0.2, 1] }}
       className={className}
+      style={style}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
