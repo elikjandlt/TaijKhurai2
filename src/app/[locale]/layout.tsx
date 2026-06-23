@@ -33,7 +33,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-[#0D0D0D] text-[#FAFAFA]">
+      <body className="min-h-full flex flex-col bg-[#F5EFE6] text-[#2B2B2B]">
         <AuthProvider>
           <CartProvider>
             <Header />

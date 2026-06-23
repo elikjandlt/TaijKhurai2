@@ -86,22 +86,22 @@ export default function WorksSection({ locale }: { locale: string }) {
   }
 
   return (
-    <section className="py-24 bg-[#0D0D0D]">
+    <section className="py-24 bg-[#E8D8C4]">
       <div className="max-w-[1440px] mx-auto px-12">
         {/* Header */}
         <FadeIn>
           <div className="flex items-end justify-between mb-12">
             <div>
-              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-3">
                 {isEn ? "PRODUCTS" : "БҮТЭЭГДЭХҮҮНҮҮД"}
               </span>
-              <h2 className="text-[36px] font-light text-[#FAFAFA]">
+              <h2 className="text-[36px] font-light text-[#2B2B2B]">
                 {isEn ? "Our Products" : "Манай бүтээгдэхүүнүүд"}
               </h2>
             </div>
             <Link
               href={lp("/collections")}
-              className="hidden sm:inline-flex items-center gap-2 text-sm text-[#C9A96E] hover:text-[#B8985D] transition-colors"
+              className="hidden sm:inline-flex items-center gap-2 text-sm text-[#B08968] hover:text-[#9A7658] transition-colors"
             >
               {isEn ? "View All →" : "Бүгдийг үзэх →"}
             </Link>
@@ -110,8 +110,8 @@ export default function WorksSection({ locale }: { locale: string }) {
 
         {/* Services - 6 cards */}
         <FadeIn delay={0.1}>
-          <h3 className="text-sm font-semibold text-[#FAFAFA] mb-6 flex items-center gap-2">
-            <span className="w-8 h-[1px] bg-[#C9A96E]"></span>
+          <h3 className="text-sm font-semibold text-[#2B2B2B] mb-6 flex items-center gap-2">
+            <span className="w-8 h-[1px] bg-[#B08968]"></span>
             {isEn ? "Services" : "Үйлчилгээ"}
           </h3>
         </FadeIn>
@@ -123,11 +123,11 @@ export default function WorksSection({ locale }: { locale: string }) {
               <FadeIn key={svc.id} delay={i * 0.05}>
                 <Link
                   href={lp(svc.link)}
-                  className="group block p-5 rounded-sm bg-white/[0.03] border border-white/5 hover:border-[#C9A96E]/30 hover:bg-white/[0.05] transition-all"
+                  className="group block p-5 rounded-sm bg-[#F5EFE6] border border-[#D4C8B8] shadow-sm hover:border-[#B08968]/50 hover:shadow-md hover:-translate-y-0.5 transition-all"
                 >
-                  <Icon size={22} className="text-[#C9A96E] mb-3" />
-                  <h4 className="text-sm font-medium text-[#FAFAFA] mb-1">{svc.name[locale as keyof typeof svc.name]}</h4>
-                  <p className="text-xs text-[#9A9590] leading-relaxed">{svc.desc[locale as keyof typeof svc.desc]}</p>
+                  <Icon size={22} className="text-[#B08968] mb-3" />
+                  <h4 className="text-sm font-medium text-[#2B2B2B] mb-1">{svc.name[locale as keyof typeof svc.name]}</h4>
+                  <p className="text-xs text-[#5A5A5A] leading-relaxed">{svc.desc[locale as keyof typeof svc.desc]}</p>
                 </Link>
               </FadeIn>
             );
@@ -136,8 +136,8 @@ export default function WorksSection({ locale }: { locale: string }) {
 
         {/* Collections */}
         <FadeIn delay={0.1}>
-          <h3 className="text-sm font-semibold text-[#FAFAFA] mb-6 flex items-center gap-2">
-            <span className="w-8 h-[1px] bg-[#C9A96E]"></span>
+          <h3 className="text-sm font-semibold text-[#2B2B2B] mb-6 flex items-center gap-2">
+            <span className="w-8 h-[1px] bg-[#B08968]"></span>
             {isEn ? "Collections" : "Цуглуулга"}
           </h3>
         </FadeIn>
@@ -146,16 +146,16 @@ export default function WorksSection({ locale }: { locale: string }) {
           {collections.map((col, i) => (
             <FadeIn key={col.id} delay={i * 0.1}>
               <Link href={lp("/collections")} className="group block">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-sm">
                   <img
                     src={col.img}
                     alt={col.name[locale as keyof typeof col.name]}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-[#0D0D0D]/40 group-hover:bg-[#0D0D0D]/20 transition-colors" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D]/80 via-[#0D0D0D]/20 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
                     <h3 className="text-lg font-medium text-[#FAFAFA]">{col.name[locale as keyof typeof col.name]}</h3>
-                    <p className="text-sm text-[#B5B0AB] mt-1">{col.desc[locale as keyof typeof col.desc]}</p>
+                    <p className="text-sm text-[#D4CFC9] mt-1">{col.desc[locale as keyof typeof col.desc]}</p>
                   </div>
                 </div>
               </Link>

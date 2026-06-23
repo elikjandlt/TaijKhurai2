@@ -80,15 +80,15 @@ export default function CollectionsSection({ locale }: { locale: string }) {
   };
 
   return (
-    <section className="py-24 bg-[#0D0D0D]">
+    <section className="py-24 bg-[#F5EFE6]">
       <div className="max-w-[1440px] mx-auto px-12">
         <FadeIn>
           <div className="flex items-end justify-between mb-12">
             <div>
-              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-3">
                 {isEn ? "COLLECTIONS" : "ЦУГЛУУЛГА"}
               </span>
-              <h2 className="text-[36px] font-light text-[#FAFAFA]">
+              <h2 className="text-[36px] font-light text-[#2B2B2B]">
                 {isEn ? "Curated for Every Space" : "Орон зайн чиг хандлага"}
               </h2>
             </div>
@@ -108,12 +108,12 @@ export default function CollectionsSection({ locale }: { locale: string }) {
                     alt={col.name[locale as keyof typeof col.name]}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-[#0D0D0D]/40 group-hover:bg-[#0D0D0D]/20 transition-colors" />
+                  <div className="absolute inset-0 bg-[#0D0D0D]/40 group-hover:bg-[#F5EFE6]/20 transition-colors" />
                   <div className="absolute bottom-6 left-6">
-                    <h3 className="text-lg font-medium text-[#FAFAFA]">
+                    <h3 className="text-lg font-medium text-[#2B2B2B]">
                       {col.name[locale as keyof typeof col.name]}
                     </h3>
-                    <span className="text-sm text-[#C9A96E] mt-1 inline-block">
+                    <span className="text-sm text-[#B08968] mt-1 inline-block">
                       {isEn ? "View items →" : "Бараа үзэх →"}
                     </span>
                   </div>
@@ -131,19 +131,19 @@ export default function CollectionsSection({ locale }: { locale: string }) {
             className="absolute inset-0 bg-[#0D0D0D]/90 backdrop-blur-sm"
             onClick={() => setActiveCollection(null)}
           />
-          <div className="relative bg-[#111111] rounded-sm max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-white/5">
-            <div className="sticky top-0 bg-[#111111] border-b border-white/5 p-6 flex items-center justify-between z-10">
+          <div className="relative bg-[#E8D8C4] rounded-sm max-w-4xl w-full max-h-[90vh] overflow-y-auto border border-[#D4C8B8]">
+            <div className="sticky top-0 bg-[#E8D8C4] border-b border-[#D4C8B8] p-6 flex items-center justify-between z-10">
               <div>
-                <h3 className="text-2xl font-medium text-[#FAFAFA]">
+                <h3 className="text-2xl font-medium text-[#2B2B2B]">
                   {activeCol.name[locale as keyof typeof activeCol.name]}
                 </h3>
-                <p className="text-sm text-[#9A9590] mt-1">
+                <p className="text-sm text-[#5A5A5A] mt-1">
                   {activeCol.desc[locale as keyof typeof activeCol.desc]}
                 </p>
               </div>
               <button
                 onClick={() => setActiveCollection(null)}
-                className="w-10 h-10 rounded-sm bg-white/[0.05] flex items-center justify-center text-[#B5B0AB] hover:text-[#FAFAFA] hover:bg-white/10 transition-colors"
+                className="w-10 h-10 rounded-sm bg-[#D4C8B8] flex items-center justify-center text-[#5A5A5A] hover:text-[#2B2B2B] hover:bg-[#C8B8A8] transition-colors"
               >
                 <X size={20} />
               </button>
@@ -151,7 +151,7 @@ export default function CollectionsSection({ locale }: { locale: string }) {
 
             <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
               {activeCol.items.map((item) => (
-                <div key={item.id} className="p-4 rounded-sm bg-white/[0.03] border border-white/5 group">
+                <div key={item.id} className="p-4 rounded-sm bg-[#F5EFE6] border border-[#D4C8B8] shadow-sm group">
                   <div className="aspect-[4/3] rounded-sm overflow-hidden mb-4">
                     <img
                       src={item.img}
@@ -159,16 +159,16 @@ export default function CollectionsSection({ locale }: { locale: string }) {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <h4 className="text-lg font-medium text-[#FAFAFA] mb-1">
+                  <h4 className="text-lg font-medium text-[#2B2B2B] mb-1">
                     {item.name[locale as keyof typeof item.name]}
                   </h4>
-                  <p className="text-[#C9A96E] font-semibold mb-4">{item.priceDisplay}</p>
+                  <p className="text-[#B08968] font-semibold mb-4">{item.priceDisplay}</p>
                   <button
                     onClick={() => handleAdd(activeCol, item)}
                     className={`w-full py-3 text-sm font-semibold rounded-sm transition-colors flex items-center justify-center gap-2 ${
                       addedId === item.id
                         ? "bg-green-600 text-white"
-                        : "bg-[#C9A96E] text-[#0D0D0D] hover:bg-[#B8985D]"
+                        : "bg-[#B08968] text-[#F5EFE6] hover:bg-[#9A7658]"
                     }`}
                   >
                     {addedId === item.id ? (

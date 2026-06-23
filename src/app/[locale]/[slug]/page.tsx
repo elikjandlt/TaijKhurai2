@@ -36,13 +36,13 @@ export default async function DynamicPage({
   return (
     <section className="pt-32 pb-16">
       <div className="max-w-[1440px] mx-auto px-12">
-        <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+        <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-3">
           {isEn ? "PAGE" : "ХУУДАС"}
         </span>
-        <h1 className="text-[48px] font-light text-[#FAFAFA] mb-6">
+        <h1 className="text-[48px] font-light text-[#2B2B2B] mb-6">
           {isEn ? "Coming Soon" : "Удахгүй"}
         </h1>
-        <p className="text-lg leading-relaxed text-[#B5B0AB]">
+        <p className="text-lg leading-relaxed text-[#5A5A5A]">
           {isEn
             ? "This page is under construction. Please check back later."
             : "Энэ хуудас бэлдэгдэж байна. Дараа дахин шалгана уу."}

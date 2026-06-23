@@ -47,36 +47,36 @@ export default function ContactPage({ locale }: { locale: string }) {
       <section className="pt-32 pb-16">
         <div className="max-w-[1440px] mx-auto px-12">
           <FadeIn>
-            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-3">
               {content.label}
             </span>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="text-[48px] font-light text-[#FAFAFA] mb-6">
+            <h1 className="text-[48px] font-light text-[#2B2B2B] mb-6">
               {content.title}
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-lg leading-relaxed text-[#B5B0AB] max-w-xl">
+            <p className="text-lg leading-relaxed text-[#5A5A5A] max-w-xl">
               {content.subtitle}
             </p>
           </FadeIn>
         </div>
       </section>
 
-      <section className="py-16 bg-[#111111]">
+      <section className="py-16 bg-[#E8D8C4]">
         <div className="max-w-[1440px] mx-auto px-12">
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="space-y-8">
               {content.info.map((item, i) => (
                 <FadeIn key={i} delay={i * 0.1}>
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-sm bg-[#C9A96E]/10 flex items-center justify-center shrink-0">
-                      <item.icon size={18} className="text-[#C9A96E]" />
+                    <div className="w-10 h-10 rounded-sm bg-[#B08968]/10 flex items-center justify-center shrink-0">
+                      <item.icon size={18} className="text-[#B08968]" />
                     </div>
                     <div>
-                      <p className="text-xs text-[#9A9590] mb-1">{item.label}</p>
-                      <p className="text-sm text-[#FAFAFA]">{item.value}</p>
+                      <p className="text-xs text-[#5A5A5A] mb-1">{item.label}</p>
+                      <p className="text-sm text-[#2B2B2B]">{item.value}</p>
                     </div>
                   </div>
                 </FadeIn>
@@ -85,12 +85,12 @@ export default function ContactPage({ locale }: { locale: string }) {
 
             <FadeIn delay={0.2}>
               {submitted ? (
-                <div className="p-8 rounded-sm bg-[#C9A96E]/10 border border-[#C9A96E]/20 text-center">
-                  <CheckCircle size={48} className="text-[#C9A96E] mx-auto mb-4" />
-                  <p className="text-lg text-[#FAFAFA] mb-2">{content.success}</p>
+                <div className="p-8 rounded-sm bg-[#B08968]/10 border border-[#B08968]/20 text-center">
+                  <CheckCircle size={48} className="text-[#B08968] mx-auto mb-4" />
+                  <p className="text-lg text-[#2B2B2B] mb-2">{content.success}</p>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="mt-4 text-sm text-[#C9A96E] hover:text-[#B8985D]"
+                    className="mt-4 text-sm text-[#B08968] hover:text-[#9A7658]"
                   >
                     {isEn ? "Send another message" : "Өөр зурвас илгээх"}
                   </button>
@@ -99,52 +99,52 @@ export default function ContactPage({ locale }: { locale: string }) {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-xs text-[#9A9590] mb-2">{content.form.name} *</label>
+                      <label className="block text-xs text-[#5A5A5A] mb-2">{content.form.name} *</label>
                       <input
                         type="text"
                         required
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
-                        className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] placeholder-[#5A5A5A] focus:outline-none focus:border-[#C9A96E]/50"
+                        className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] placeholder-[#7D7D7D] focus:outline-none focus:border-[#B08968]/50"
                         placeholder={content.form.name}
                       />
                     </div>
                     <div>
-                      <label className="block text-xs text-[#9A9590] mb-2">{content.form.email} *</label>
+                      <label className="block text-xs text-[#5A5A5A] mb-2">{content.form.email} *</label>
                       <input
                         type="email"
                         required
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
-                        className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] placeholder-[#5A5A5A] focus:outline-none focus:border-[#C9A96E]/50"
+                        className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] placeholder-[#7D7D7D] focus:outline-none focus:border-[#B08968]/50"
                         placeholder={content.form.email}
                       />
                     </div>
                   </div>
                   <div>
-                    <label className="block text-xs text-[#9A9590] mb-2">{content.form.phone}</label>
+                    <label className="block text-xs text-[#5A5A5A] mb-2">{content.form.phone}</label>
                     <input
                       type="tel"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] placeholder-[#5A5A5A] focus:outline-none focus:border-[#C9A96E]/50"
+                      className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] placeholder-[#7D7D7D] focus:outline-none focus:border-[#B08968]/50"
                       placeholder={content.form.phone}
                     />
                   </div>
                   <div>
-                    <label className="block text-xs text-[#9A9590] mb-2">{content.form.message} *</label>
+                    <label className="block text-xs text-[#5A5A5A] mb-2">{content.form.message} *</label>
                     <textarea
                       rows={5}
                       required
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] placeholder-[#5A5A5A] focus:outline-none focus:border-[#C9A96E]/50 resize-none"
+                      className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] placeholder-[#7D7D7D] focus:outline-none focus:border-[#B08968]/50 resize-none"
                       placeholder={content.form.message}
                     />
                   </div>
                   <button
                     type="submit"
-                    className="px-8 py-4 bg-[#C9A96E] text-[#0D0D0D] text-sm font-semibold rounded-sm hover:bg-[#B8985D] transition-colors"
+                    className="px-8 py-4 bg-[#B08968] text-[#F5EFE6] text-sm font-semibold rounded-sm hover:bg-[#9A7658] transition-colors"
                   >
                     {content.form.submit}
                   </button>

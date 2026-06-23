@@ -33,14 +33,14 @@ export default function TestimonialsSection({ locale }: { locale: string }) {
   const isEn = locale === "en";
 
   return (
-    <section className="py-24 bg-[#111111]">
+    <section className="py-24 bg-[#E8D8C4]">
       <div className="max-w-[1440px] mx-auto px-12">
         <FadeIn>
           <div className="text-center mb-16">
-            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-3">
               {isEn ? "TESTIMONIALS" : "СЭТГЭГДЭЛ"}
             </span>
-            <h2 className="text-[36px] font-light text-[#FAFAFA]">
+            <h2 className="text-[36px] font-light text-[#2B2B2B]">
               {isEn ? "What Clients Say" : "Үйлчлүүлэгчдийн үг"}
             </h2>
           </div>
@@ -49,17 +49,17 @@ export default function TestimonialsSection({ locale }: { locale: string }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
             <FadeIn key={i} delay={i * 0.15}>
-              <div className="p-8 rounded-sm bg-white/[0.03] border border-white/5">
-                <p className="text-base leading-relaxed text-[#B5B0AB] mb-6">
+              <div className="p-8 rounded-sm bg-[#F5EFE6] border border-[#D4C8B8] shadow-sm">
+                <p className="text-base leading-relaxed text-[#5A5A5A] mb-6">
                   "{t.quote[locale as keyof typeof t.quote]}"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#C9A96E]/20 flex items-center justify-center text-[#C9A96E] text-sm font-semibold">
+                  <div className="w-10 h-10 rounded-full bg-[#B08968]/20 flex items-center justify-center text-[#B08968] text-sm font-semibold">
                     {t.author[0]}
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-[#FAFAFA]">{t.author}</p>
-                    <p className="text-xs text-[#9A9590]">{t.role[locale as keyof typeof t.role]}</p>
+                    <p className="text-sm font-medium text-[#2B2B2B]">{t.author}</p>
+                    <p className="text-xs text-[#5A5A5A]">{t.role[locale as keyof typeof t.role]}</p>
                   </div>
                 </div>
               </div>

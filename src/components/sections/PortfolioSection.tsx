@@ -19,21 +19,21 @@ export default function PortfolioSection({ locale }: { locale: string }) {
   }
 
   return (
-    <section className="py-24 bg-[#0D0D0D]">
+    <section className="py-24 bg-[#F5EFE6]">
       <div className="max-w-[1440px] mx-auto px-12">
         <FadeIn>
           <div className="flex items-end justify-between mb-12">
             <div>
-              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-3">
                 {isEn ? "PORTFOLIO" : "ТӨСЛҮҮД"}
               </span>
-              <h2 className="text-[36px] font-light text-[#FAFAFA]">
+              <h2 className="text-[36px] font-light text-[#2B2B2B]">
                 {isEn ? "Recent Work" : "Сүүлийн ажлууд"}
               </h2>
             </div>
             <Link
               href={lp("/portfolio")}
-              className="hidden sm:inline-flex items-center gap-2 text-sm text-[#C9A96E] hover:text-[#B8985D] transition-colors"
+              className="hidden sm:inline-flex items-center gap-2 text-sm text-[#B08968] hover:text-[#9A7658] transition-colors"
             >
               {isEn ? "View All →" : "Бүгдийг үзэх →"}
             </Link>
@@ -50,12 +50,12 @@ export default function PortfolioSection({ locale }: { locale: string }) {
                     alt={proj.title[locale as keyof typeof proj.title]}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-[#0D0D0D]/30 group-hover:bg-[#0D0D0D]/10 transition-colors" />
+                  <div className="absolute inset-0 bg-[#0D0D0D]/30 group-hover:bg-[#F5EFE6]/10 transition-colors" />
                 </div>
-                <span className="text-xs text-[#C9A96E]">
+                <span className="text-xs text-[#B08968]">
                   {proj.category[locale as keyof typeof proj.category]}
                 </span>
-                <h3 className="text-lg font-medium text-[#FAFAFA] mt-1">
+                <h3 className="text-lg font-medium text-[#2B2B2B] mt-1">
                   {proj.title[locale as keyof typeof proj.title]}
                 </h3>
               </Link>

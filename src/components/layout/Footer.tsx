@@ -36,28 +36,28 @@ export default function Footer() {
   const t = footerLabels[locale] ?? footerLabels.mn;
 
   return (
-    <footer className="bg-[#0D0D0D] border-t border-white/5">
+    <footer className="bg-[#F5EFE6] border-t border-[#D4C8B8]">
       <div className="max-w-[1440px] mx-auto px-12 py-16">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
           <div className="lg:w-80">
-            <Link href={localePath("/", locale)} className="text-xl font-semibold tracking-[2px] text-[#FAFAFA]">
+            <Link href={localePath("/", locale)} className="text-xl font-semibold tracking-[2px] text-[#2B2B2B]">
               Taij-Khurai
             </Link>
-            <p className="mt-4 text-sm leading-relaxed text-[#9A9590]">
+            <p className="mt-4 text-sm leading-relaxed text-[#5A5A5A]">
               {t.description}
             </p>
           </div>
 
           <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-[13px] font-semibold text-[#FAFAFA] mb-3">{t.explore}</h4>
+              <h4 className="text-[13px] font-semibold text-[#2B2B2B] mb-3">{t.explore}</h4>
               <ul className="space-y-2">
               {[
                 { label: "Products", href: "/collections" },
                 { label: "AI Customizer", href: "/ai-customizer" },
               ].map((item) => (
                   <li key={item.label}>
-                    <Link href={localePath(item.href, locale)} className="text-sm text-[#9A9590] hover:text-[#FAFAFA] transition-colors">
+                    <Link href={localePath(item.href, locale)} className="text-sm text-[#5A5A5A] hover:text-[#2B2B2B] transition-colors">
                       {item.label}
                     </Link>
                   </li>
@@ -66,7 +66,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-[13px] font-semibold text-[#FAFAFA] mb-3">{t.company}</h4>
+              <h4 className="text-[13px] font-semibold text-[#2B2B2B] mb-3">{t.company}</h4>
               <ul className="space-y-2">
                 {[
                   { label: "About Us", href: "/about" },
@@ -74,7 +74,7 @@ export default function Footer() {
                   { label: "Contact", href: "/contact" },
                 ].map((item) => (
                   <li key={item.label}>
-                    <Link href={localePath(item.href, locale)} className="text-sm text-[#9A9590] hover:text-[#FAFAFA] transition-colors">
+                    <Link href={localePath(item.href, locale)} className="text-sm text-[#5A5A5A] hover:text-[#2B2B2B] transition-colors">
                       {item.label}
                     </Link>
                   </li>
@@ -83,7 +83,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-[13px] font-semibold text-[#FAFAFA] mb-3">{t.support}</h4>
+              <h4 className="text-[13px] font-semibold text-[#2B2B2B] mb-3">{t.support}</h4>
               <ul className="space-y-2">
                 {[
                   { label: "FAQ", href: "/help#faq" },
@@ -92,7 +92,7 @@ export default function Footer() {
                   { label: "Warranty", href: "/help#warranty" },
                 ].map((item) => (
                   <li key={item.label}>
-                    <a href={localePath(item.href, locale)} className="text-sm text-[#9A9590] hover:text-[#FAFAFA] transition-colors">
+                    <a href={localePath(item.href, locale)} className="text-sm text-[#5A5A5A] hover:text-[#2B2B2B] transition-colors">
                       {item.label}
                     </a>
                   </li>
@@ -102,12 +102,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="mt-12 pt-8 border-t border-[#D4C8B8] flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-[#5A5A5A]">{t.rights}</p>
           <div className="flex gap-6 text-xs text-[#5A5A5A]">
-            <span className="hover:text-[#9A9590] transition-colors cursor-pointer">Privacy Policy</span>
-            <span className="hover:text-[#9A9590] transition-colors cursor-pointer">Terms of Service</span>
-            <span className="hover:text-[#9A9590] transition-colors cursor-pointer">Cookie Policy</span>
+            <span className="hover:text-[#5A5A5A] transition-colors cursor-pointer">Privacy Policy</span>
+            <span className="hover:text-[#5A5A5A] transition-colors cursor-pointer">Terms of Service</span>
+            <span className="hover:text-[#5A5A5A] transition-colors cursor-pointer">Cookie Policy</span>
           </div>
         </div>
       </div>

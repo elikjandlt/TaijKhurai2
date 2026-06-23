@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0D0D0D;
-  --foreground: #FAFAFA;
-  --primary: #C9A96E;
-  --primary-foreground: #0D0D0D;
-  --card: #1A1A1A;
-  --card-foreground: #FAFAFA;
-  --muted: #2D2D2D;
-  --muted-foreground: #9A9590;
-  --border: #333333;
-  --input: #1A1A1A;
-  --ring: #C9A96E;
-  --accent: #C9A96E;
-  --accent-foreground: #0D0D0D;
-  --secondary: #1A1A1A;
-  --secondary-foreground: #FAFAFA;
+  --background: #F5EFE6;
+  --foreground: #2B2B2B;
+  --primary: #B08968;
+  --primary-foreground: #FAFAFA;
+  --card: #E8D8C4;
+  --card-foreground: #2B2B2B;
+  --muted: #E8D8C4;
+  --muted-foreground: #7D7D7D;
+  --border: #D4C8B8;
+  --input: #F5EFE6;
+  --ring: #B08968;
+  --accent: #B08968;
+  --accent-foreground: #FAFAFA;
+  --secondary: #E8D8C4;
+  --secondary-foreground: #2B2B2B;
   --destructive: #EF4444;
   --success: #4ADE80;
   --warning: #FBBF24;
@@ -56,16 +56,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0D0D0D;
+  background: #E8D8C4;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333333;
+  background: #B08968;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555555;
+  background: #9A7658;
 }
 
 /* Smooth scroll */
@@ -75,6 +75,6 @@ html {
 
 /* Selection */
 ::selection {
-  background: rgba(201, 169, 110, 0.3);
-  color: #FAFAFA;
+  background: rgba(176, 137, 104, 0.3);
+  color: #2B2B2B;
 }

@@ -18,8 +18,8 @@
           "width": "fill_container",
           "height": 80,
           "padding": [
-            0,
-            48
+            24,
+            80
           ],
           "justifyContent": "space_between",
           "alignItems": "center",
@@ -172,15 +172,15 @@
           "id": "X3nAx",
           "name": "Hero",
           "width": "fill_container",
-          "height": 700,
+          "height": 800,
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1778220346941.png",
+            "url": "images/generated-1778220346941.png",
             "mode": "fill"
           },
           "layout": "vertical",
-          "gap": 24,
+          "gap": 32,
           "padding": [
             120,
             48
@@ -290,8 +290,8 @@
           "layout": "vertical",
           "gap": 16,
           "padding": [
-            80,
-            48
+            100,
+            80
           ],
           "children": [
             {
@@ -360,7 +360,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./images/generated-1778220325977.png",
+                        "url": "images/generated-1778220325977.png",
                         "mode": "fill"
                       },
                       "cornerRadius": 8
@@ -395,7 +395,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./images/generated-1778220339664.png",
+                        "url": "images/generated-1778220339664.png",
                         "mode": "fill"
                       },
                       "cornerRadius": 8
@@ -430,7 +430,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./images/generated-1778220335827.png",
+                        "url": "images/generated-1778220335827.png",
                         "mode": "fill"
                       },
                       "cornerRadius": 8
@@ -465,7 +465,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./images/generated-1778220324162.png",
+                        "url": "images/generated-1778220324162.png",
                         "mode": "fill"
                       },
                       "cornerRadius": 8
@@ -495,8 +495,8 @@
           "layout": "vertical",
           "gap": 16,
           "padding": [
-            80,
-            48
+            100,
+            80
           ],
           "children": [
             {
@@ -627,7 +627,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1778220331447.png",
+                    "url": "images/generated-1778220331447.png",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -645,8 +645,8 @@
           "layout": "vertical",
           "gap": 16,
           "padding": [
-            80,
-            48
+            100,
+            80
           ],
           "children": [
             {
@@ -706,7 +706,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1778220328375.png",
+                    "url": "images/generated-1778220328375.png",
                     "mode": "fill"
                   },
                   "cornerRadius": 8
@@ -720,7 +720,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1778220334524.png",
+                    "url": "images/generated-1778220334524.png",
                     "mode": "fill"
                   },
                   "cornerRadius": 8
@@ -734,7 +734,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1778220332012.png",
+                    "url": "images/generated-1778220332012.png",
                     "mode": "fill"
                   },
                   "cornerRadius": 8
@@ -751,8 +751,8 @@
           "layout": "vertical",
           "gap": 16,
           "padding": [
-            80,
-            48
+            100,
+            80
           ],
           "children": [
             {
@@ -903,8 +903,8 @@
           "layout": "vertical",
           "gap": 16,
           "padding": [
-            80,
-            48
+            100,
+            80
           ],
           "children": [
             {
@@ -972,7 +972,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./images/generated-1778220333815.png",
+                        "url": "images/generated-1778220333815.png",
                         "mode": "fill"
                       },
                       "cornerRadius": 8
@@ -1016,7 +1016,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./images/generated-1778220325420.png",
+                        "url": "images/generated-1778220325420.png",
                         "mode": "fill"
                       },
                       "cornerRadius": 8
@@ -1060,7 +1060,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./images/generated-1778220326978.png",
+                        "url": "images/generated-1778220326978.png",
                         "mode": "fill"
                       },
                       "cornerRadius": 8
@@ -1100,8 +1100,8 @@
           "layout": "vertical",
           "gap": 16,
           "padding": [
-            80,
-            48
+            100,
+            80
           ],
           "alignItems": "center",
           "children": [
@@ -1163,8 +1163,11 @@
           "width": "fill_container",
           "fill": "#0D0D0D",
           "layout": "vertical",
-          "gap": 32,
-          "padding": 48,
+          "gap": 40,
+          "padding": [
+            60,
+            80
+          ],
           "children": [
             {
               "type": "frame",
@@ -1462,7 +1465,7 @@
     {
       "type": "frame",
       "id": "qf9gF",
-      "x": 1540,
+      "x": 1541,
       "y": 0,
       "name": "About Page",
       "width": 1440,
@@ -1471,43 +1474,10 @@
       "children": [
         {
           "type": "frame",
-          "id": "NFeby",
-          "name": "aboutHeader",
+          "id": "wRCLK",
+          "name": "vmvSection",
           "width": "fill_container",
-          "layout": "vertical",
-          "gap": 16,
-          "padding": [
-            80,
-            48
-          ],
-          "children": [
-            {
-              "type": "text",
-              "id": "VVYFF",
-              "fill": "#C9A96E",
-              "content": "БИДНИЙ ТУХАЙ",
-              "fontFamily": "Inter",
-              "fontSize": 12,
-              "fontWeight": "600",
-              "letterSpacing": 4
-            },
-            {
-              "type": "text",
-              "id": "Vmubv",
-              "fill": "#FAFAFA",
-              "content": "Бидний түүх",
-              "fontFamily": "Inter",
-              "fontSize": 64,
-              "fontWeight": "700"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "Wcu59",
-          "name": "aboutContent",
-          "width": "fill_container",
-          "gap": 64,
+          "gap": 24,
           "padding": [
             80,
             48
@@ -1515,68 +1485,145 @@
           "children": [
             {
               "type": "frame",
-              "id": "LQuKV",
-              "name": "aboutText",
-              "width": 600,
+              "id": "B9zkIW",
+              "name": "visionCard",
+              "width": "fill_container",
+              "height": 420,
+              "fill": "#1A1A1A",
+              "cornerRadius": 8,
               "layout": "vertical",
-              "gap": 24,
+              "gap": 16,
+              "padding": 48,
+              "alignItems": "center",
               "children": [
                 {
                   "type": "text",
-                  "id": "VKNEZ",
-                  "fill": "#D4CFC9",
-                  "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Taij-Khurai нь Монголын гар урлал ба Скандинавийн минимализмыг хослуулсан тавилгын брэнд юм. Бид 2020 оноос хойш үйл ажиллагаагаа явуулж байна.",
-                  "lineHeight": 1.6,
+                  "id": "V3yH6",
+                  "name": "visionTitle",
+                  "fill": "#FAFAFA",
+                  "content": "Алсын хараа",
                   "fontFamily": "Inter",
-                  "fontSize": 17,
-                  "fontWeight": "normal"
+                  "fontSize": 20,
+                  "fontWeight": "600"
                 },
                 {
                   "type": "text",
-                  "id": "INHdx",
-                  "fill": "#D4CFC9",
+                  "id": "R9XZQ",
+                  "name": "visionDesc",
+                  "fill": "#9A9590",
                   "textGrowth": "fixed-width",
-                  "width": "fill_container",
-                  "content": "Бидний зорилго бол хүн бүрт өндөр чанартай, хувь хүнд тохирсон тавилгыг хүргэх. Манай багийн гишүүд мэргэжлийн дизайнер, гар урчууд бөгөөд өөрсдийн ур чадвараа таны орон зайд зориулан ашигладаг.",
-                  "lineHeight": 1.6,
-                  "fontFamily": "Inter",
-                  "fontSize": 17,
-                  "fontWeight": "normal"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "bzHqK",
-              "name": "aboutImg",
-              "metadata": {
-                "type": "unsplash",
-                "username": "mikitayo",
-                "link": "https://unsplash.com/@mikitayo",
-                "author": "Mikita Yo"
-              },
-              "width": "fill_container",
-              "height": 500,
-              "fill": {
-                "type": "image",
-                "enabled": true,
-                "url": "https://images.unsplash.com/photo-1611523794717-4d1f87dabf3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NDF8&ixlib=rb-4.1.0&q=80&w=1080",
-                "mode": "fill"
-              },
-              "layout": "vertical",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "lgbCq",
-                  "fill": "#5A5A5A",
-                  "content": "[Workshop Image]",
+                  "width": 280,
+                  "content": "Тогтвортой, хүртээмжтэй үр өгөөжийг бий болгосон хөгжүүлэгч компани болно.",
+                  "lineHeight": 1.5,
                   "textAlign": "center",
-                  "textAlignVertical": "middle",
                   "fontFamily": "Inter",
                   "fontSize": 14,
                   "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "PVfje",
+                  "name": "visionIcon",
+                  "width": 100,
+                  "height": 100,
+                  "fill": "#C9A96E",
+                  "cornerRadius": 50
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "n0rgi",
+              "name": "missionCard",
+              "width": "fill_container",
+              "height": 420,
+              "fill": "#1A1A1A",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 48,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nAVHJ",
+                  "name": "missionTitle",
+                  "fill": "#FAFAFA",
+                  "content": "Эрхэм зорилго",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "QDgmq",
+                  "name": "missionDesc",
+                  "fill": "#9A9590",
+                  "textGrowth": "fixed-width",
+                  "width": 280,
+                  "content": "Дэвшилтэт шийдэл, олон улсын стандартыг хүсэл тэмүүлэл, үр чадварын холбон Монгол Улсын хөгжил, эдийн засгийн өсөлтөд хувь нэмрээ оруулна.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "RFvMR",
+                  "name": "missionIcon",
+                  "width": 100,
+                  "height": 100,
+                  "fill": "#C9A96E",
+                  "cornerRadius": 50
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qNBgb",
+              "name": "valuesCard",
+              "width": "fill_container",
+              "height": 420,
+              "fill": "#1A1A1A",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 48,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UMPfR",
+                  "name": "valuesTitle",
+                  "fill": "#FAFAFA",
+                  "content": "Үнэт зүйлс",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "FiqV5",
+                  "name": "valuesDesc",
+                  "fill": "#9A9590",
+                  "textGrowth": "fixed-width",
+                  "width": 280,
+                  "content": "Тогтвортой хөгжил, Хамтын зүтгэл, Дэвшилтэт технологи, Чанар, Ёс зүй, Хүндэтгэл",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "dxI6w",
+                  "name": "valuesIcon",
+                  "width": 100,
+                  "height": 100,
+                  "fill": "#C9A96E",
+                  "cornerRadius": 50
                 }
               ]
             }
@@ -1584,372 +1631,445 @@
         },
         {
           "type": "frame",
-          "id": "dB4YH",
-          "name": "valuesSection",
+          "id": "UdDoy",
+          "name": "timelineSection",
           "width": "fill_container",
-          "fill": "#111111",
           "layout": "vertical",
-          "gap": 16,
+          "gap": 48,
           "padding": [
             80,
             48
           ],
+          "alignItems": "center",
           "children": [
             {
               "type": "text",
-              "id": "BBkI3",
-              "fill": "#C9A96E",
-              "content": "БИДНИЙ ҮНЭТ ЗҮЙЛС",
-              "fontFamily": "Inter",
-              "fontSize": 12,
-              "fontWeight": "600",
-              "letterSpacing": 3
-            },
-            {
-              "type": "text",
-              "id": "mRRYd",
+              "id": "sU8vR",
+              "name": "timelineTitle",
               "fill": "#FAFAFA",
-              "content": "Бид юунд итгэдэг вэ",
+              "content": "Бидний түүх",
+              "textAlign": "center",
               "fontFamily": "Inter",
               "fontSize": 36,
-              "fontWeight": "600"
+              "fontWeight": "700"
             },
             {
               "type": "frame",
-              "id": "dto9z",
-              "name": "valuesGrid",
-              "width": "fill_container",
-              "gap": 24,
+              "id": "u2ify",
+              "name": "timelineRows",
+              "width": 800,
+              "layout": "vertical",
+              "gap": 80,
+              "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
-                  "id": "Kbq20",
-                  "name": "val1",
+                  "id": "rpdYs",
+                  "name": "row1",
                   "width": "fill_container",
-                  "fill": "#1A1A1A",
-                  "cornerRadius": 8,
-                  "layout": "vertical",
-                  "gap": 16,
-                  "padding": 32,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "w5Nwu",
-                      "fill": "#FAFAFA",
-                      "content": "Чанар",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "m12AF",
-                      "fill": "#9A9590",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Бид зөвхөн хамгийн сайн материал ашиглаж, мэргэжлийн гар урчуудтай хамтран ажилладаг.",
-                      "lineHeight": 1.5,
-                      "fontFamily": "Inter",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "aJj92",
-                  "name": "val2",
-                  "width": "fill_container",
-                  "fill": "#1A1A1A",
-                  "cornerRadius": 8,
-                  "layout": "vertical",
-                  "gap": 16,
-                  "padding": 32,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "fF9vv",
-                      "fill": "#FAFAFA",
-                      "content": "Захиалгат",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "m879Us",
-                      "fill": "#9A9590",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Бүх орон зай өвөрмөц. Тиймээс бид таны тавилгыг төгс тохируулах боломжийг олгодог.",
-                      "lineHeight": 1.5,
-                      "fontFamily": "Inter",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "Q4xF6H",
-                  "name": "val3",
-                  "width": "fill_container",
-                  "fill": "#1A1A1A",
-                  "cornerRadius": 8,
-                  "layout": "vertical",
-                  "gap": 16,
-                  "padding": 32,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "W3RiK",
-                      "fill": "#FAFAFA",
-                      "content": "Тогтвортой байдал",
-                      "fontFamily": "Inter",
-                      "fontSize": 24,
-                      "fontWeight": "600"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Fsuse",
-                      "fill": "#9A9590",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Бид хариуцлагатайгаар материал авч, удаан эдлэхээр дизайн хийдэг.",
-                      "lineHeight": 1.5,
-                      "fontFamily": "Inter",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "FWzhn",
-          "name": "teamSection",
-          "width": "fill_container",
-          "layout": "vertical",
-          "gap": 16,
-          "padding": [
-            80,
-            48
-          ],
-          "children": [
-            {
-              "type": "text",
-              "id": "igTj4",
-              "fill": "#C9A96E",
-              "content": "БИДНИЙ БАГ",
-              "fontFamily": "Inter",
-              "fontSize": 12,
-              "fontWeight": "600",
-              "letterSpacing": 3
-            },
-            {
-              "type": "text",
-              "id": "Gbmxc",
-              "fill": "#FAFAFA",
-              "content": "Гар урлалын ард буй хүмүүс",
-              "fontFamily": "Inter",
-              "fontSize": 36,
-              "fontWeight": "600"
-            },
-            {
-              "type": "frame",
-              "id": "oHZB7",
-              "name": "teamGrid",
-              "width": "fill_container",
-              "gap": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "PCRU1",
-                  "name": "tm1",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
+                  "gap": 20,
                   "children": [
                     {
                       "type": "frame",
-                      "id": "QyDf3",
-                      "metadata": {
-                        "type": "unsplash",
-                        "username": "abdullahraafat98",
-                        "link": "https://unsplash.com/@abdullahraafat98",
-                        "author": "Abdullah Raafat"
-                      },
-                      "width": "fill_container",
-                      "height": 320,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1748950413337-5cfdb6b59321?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-                        "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      "id": "L2WyR6",
+                      "name": "r1Leftn",
+                      "width": 340,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kzxfp",
+                          "name": "r1Textn",
+                          "fill": "#D4CFC9",
+                          "textGrowth": "fixed-width",
+                          "width": 340,
+                          "content": "Taij-Khurai-г үүсгэсэн. Монголын гар урлал ба Скандинавийн минимализмыг хослуулсан тавилгын брэндийг үүсгэсэн.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TANe8",
+                          "name": "r1Yearn",
+                          "fill": "#C9A96E",
+                          "content": "2020 он",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
                     },
                     {
-                      "type": "text",
-                      "id": "r3iGw",
-                      "fill": "#FAFAFA",
-                      "content": "Enkhbold G.",
-                      "fontFamily": "Inter",
-                      "fontSize": 18,
-                      "fontWeight": "500"
+                      "type": "frame",
+                      "id": "hgPm9",
+                      "name": "r1Centern",
+                      "width": 40,
+                      "height": 40,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "kTQhw",
+                          "name": "r1Dotn",
+                          "fill": "#C9A96E",
+                          "width": 16,
+                          "height": 16,
+                          "stroke": {
+                            "align": "center",
+                            "thickness": 3,
+                            "fill": "#FFFFFF"
+                          }
+                        }
+                      ]
                     },
                     {
-                      "type": "text",
-                      "id": "lCC7Y",
-                      "fill": "#9A9590",
-                      "content": "Founder & CEO",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "HO2Ry",
+                      "name": "r1Rightn",
+                      "width": 340,
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fnP9H",
+                      "name": "r1Connector",
+                      "width": 20,
+                      "height": 1,
+                      "fill": "#C9A96E"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "bTtiA",
-                  "name": "tm2",
+                  "id": "Tj10A",
+                  "name": "row2",
                   "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
+                  "gap": 20,
+                  "justifyContent": "end",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "JcQ3K",
-                      "metadata": {
-                        "type": "unsplash",
-                        "username": "seliigraphy",
-                        "link": "https://unsplash.com/@seliigraphy",
-                        "author": "selin"
-                      },
-                      "width": "fill_container",
-                      "height": 320,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1707129486852-93d248d58b19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-                        "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      "id": "RUdvW",
+                      "name": "r2Leftn",
+                      "width": 340,
+                      "height": 1
                     },
                     {
-                      "type": "text",
-                      "id": "P1Y6q",
-                      "fill": "#FAFAFA",
-                      "content": "Sarnai D.",
-                      "fontFamily": "Inter",
-                      "fontSize": 18,
-                      "fontWeight": "500"
+                      "type": "frame",
+                      "id": "MrDHc",
+                      "name": "r2Centern",
+                      "width": 40,
+                      "height": 40,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "d0TSs",
+                          "name": "r2Dotn",
+                          "fill": "#C9A96E",
+                          "width": 16,
+                          "height": 16,
+                          "stroke": {
+                            "align": "center",
+                            "thickness": 3,
+                            "fill": "#FFFFFF"
+                          }
+                        }
+                      ]
                     },
                     {
-                      "type": "text",
-                      "id": "nW3lL",
-                      "fill": "#9A9590",
-                      "content": "Head of Design",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "sTtlT",
+                      "name": "r2Rightn",
+                      "width": 340,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZSdFT",
+                          "name": "r2Textn",
+                          "fill": "#D4CFC9",
+                          "textGrowth": "fixed-width",
+                          "width": 340,
+                          "content": "Анхны showroom нээгдсэн. Улаанбаатар хотод анхны showroom-оо нээн, үйлчлүүлэгчдэдээ захиалгат тавилгын үйлчилгээгээ танилцуулсан.",
+                          "lineHeight": 1.5,
+                          "textAlign": "right",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WItUO",
+                          "name": "r2Yearn",
+                          "fill": "#C9A96E",
+                          "content": "2021 он",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "G8j2nD",
+                      "name": "r2Connector",
+                      "width": 20,
+                      "height": 1,
+                      "fill": "#C9A96E"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "xgNdh",
-                  "name": "tm3",
+                  "id": "u48Gd0",
+                  "name": "row3",
                   "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
+                  "gap": 20,
                   "children": [
                     {
                       "type": "frame",
-                      "id": "q25ls",
-                      "metadata": {
-                        "type": "unsplash",
-                        "username": "gowthamagm",
-                        "link": "https://unsplash.com/@gowthamagm",
-                        "author": "Gowtham AGM"
-                      },
-                      "width": "fill_container",
-                      "height": 320,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1698768194564-bd8ac2f4ea94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
-                        "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      "id": "gFAZl",
+                      "name": "r3Leftn",
+                      "width": 340,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fEuGL",
+                          "name": "r3Textn",
+                          "fill": "#D4CFC9",
+                          "textGrowth": "fixed-width",
+                          "width": 340,
+                          "content": "Олон улсын зах зээлд гарсан. Скандинавийн орнуудад экспортын гэрээ байгуулж, олон улсын зах зээлд хөл тависан.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "s6M77q",
+                          "name": "r3Yearn",
+                          "fill": "#C9A96E",
+                          "content": "2022 он",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
                     },
                     {
-                      "type": "text",
-                      "id": "pOvHr",
-                      "fill": "#FAFAFA",
-                      "content": "Batbayar T.",
-                      "fontFamily": "Inter",
-                      "fontSize": 18,
-                      "fontWeight": "500"
+                      "type": "frame",
+                      "id": "d758I",
+                      "name": "r3Centern",
+                      "width": 40,
+                      "height": 40,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "hpyvL",
+                          "name": "r3Dotn",
+                          "fill": "#C9A96E",
+                          "width": 16,
+                          "height": 16,
+                          "stroke": {
+                            "align": "center",
+                            "thickness": 3,
+                            "fill": "#FFFFFF"
+                          }
+                        }
+                      ]
                     },
                     {
-                      "type": "text",
-                      "id": "xVLa0",
-                      "fill": "#9A9590",
-                      "content": "Master Craftsman",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "D23cl",
+                      "name": "r3Rightn",
+                      "width": 340,
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "q36YQu",
+                      "name": "r3Connector",
+                      "width": 20,
+                      "height": 1,
+                      "fill": "#C9A96E"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "Nqk99",
-                  "name": "tm4",
+                  "id": "cyt3D",
+                  "name": "row4",
                   "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
+                  "gap": 20,
+                  "justifyContent": "end",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "N2yDtO",
-                      "metadata": {
-                        "type": "unsplash",
-                        "username": "sammyswae",
-                        "link": "https://unsplash.com/@sammyswae",
-                        "author": "sammy swae"
-                      },
-                      "width": "fill_container",
-                      "height": 320,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1770235622504-3851a96ac6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NDR8&ixlib=rb-4.1.0&q=80&w=1080",
-                        "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      "id": "K3i8VC",
+                      "name": "r4Leftn",
+                      "width": 340,
+                      "height": 1
                     },
                     {
-                      "type": "text",
-                      "id": "ZHq3u",
-                      "fill": "#FAFAFA",
-                      "content": "Oyungerel M.",
-                      "fontFamily": "Inter",
-                      "fontSize": 18,
-                      "fontWeight": "500"
+                      "type": "frame",
+                      "id": "s2bJi",
+                      "name": "r4Centern",
+                      "width": 40,
+                      "height": 40,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "GTbUD",
+                          "name": "r4Dotn",
+                          "fill": "#C9A96E",
+                          "width": 16,
+                          "height": 16,
+                          "stroke": {
+                            "align": "center",
+                            "thickness": 3,
+                            "fill": "#FFFFFF"
+                          }
+                        }
+                      ]
                     },
                     {
-                      "type": "text",
-                      "id": "o60By0",
-                      "fill": "#9A9590",
-                      "content": "Operations Director",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "mM2vR",
+                      "name": "r4Rightn",
+                      "width": 340,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MEMWe",
+                          "name": "r4Textn",
+                          "fill": "#D4CFC9",
+                          "textGrowth": "fixed-width",
+                          "width": 340,
+                          "content": "AI технологи нэвтрүүлсэн. AI туслах системийг нэвтрүүлж, үйлчлүүлэгчдэдээ орон зайд тохирсон тавилгын дизайныг хурдан үүсгэх боломж олгосон.",
+                          "lineHeight": 1.5,
+                          "textAlign": "right",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "p3A8lC",
+                          "name": "r4Yearn",
+                          "fill": "#C9A96E",
+                          "content": "2023 он",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pnQYj",
+                      "name": "r4Connector",
+                      "width": 20,
+                      "height": 1,
+                      "fill": "#C9A96E"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H4B5s",
+                  "name": "row5",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eRVxu",
+                      "name": "r5Leftn",
+                      "width": 340,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IFu4q",
+                          "name": "r5Textn",
+                          "fill": "#D4CFC9",
+                          "textGrowth": "fixed-width",
+                          "width": 340,
+                          "content": "500+ төсөл хэрэгжүүлсэн. Орон сууц, оффис, зочид буудал, ресторан гэх мэт 500 гаруй төслийг амжилттай хэрэгжүүлсэн.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PrnIh",
+                          "name": "r5Yearn",
+                          "fill": "#C9A96E",
+                          "content": "2024 он",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IueRi",
+                      "name": "r5Centern",
+                      "width": 40,
+                      "height": 40,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "OBvvZ",
+                          "name": "r5Dotn",
+                          "fill": "#C9A96E",
+                          "width": 16,
+                          "height": 16,
+                          "stroke": {
+                            "align": "center",
+                            "thickness": 3,
+                            "fill": "#FFFFFF"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "C3ffoS",
+                      "name": "r5Rightn",
+                      "width": 340,
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TxgqN",
+                      "name": "r5Connector",
+                      "width": 20,
+                      "height": 1,
+                      "fill": "#C9A96E"
                     }
                   ]
                 }
@@ -1962,8 +2082,8 @@
     {
       "type": "frame",
       "id": "yJ3Uv",
-      "x": 1540,
-      "y": 2068,
+      "x": 3279,
+      "y": 0,
       "name": "Contact Page",
       "width": 1440,
       "fill": "#0D0D0D",
@@ -2414,8 +2534,8 @@
     {
       "type": "frame",
       "id": "ul94R",
-      "x": 1540,
-      "y": 3410,
+      "x": 1541,
+      "y": 2121,
       "name": "Collections Page",
       "width": 1440,
       "fill": "#0D0D0D",
@@ -2687,8 +2807,8 @@
     {
       "type": "frame",
       "id": "vHmB3",
-      "x": 1540,
-      "y": 4721,
+      "x": 3359,
+      "y": 2121,
       "name": "Portfolio Page",
       "width": 1440,
       "fill": "#0D0D0D",
@@ -2712,178 +2832,197 @@
               "fill": "#C9A96E",
               "content": "ТӨСЛҮҮД",
               "fontFamily": "Inter",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "600",
-              "letterSpacing": 4
+              "letterSpacing": 6
             },
             {
               "type": "text",
               "id": "TKzkx",
               "fill": "#FAFAFA",
-              "content": "Сүүлийн ажлууд",
+              "content": "Төслүүд",
               "fontFamily": "Inter",
-              "fontSize": 48,
+              "fontSize": 56,
               "fontWeight": "700"
             }
           ]
         },
         {
           "type": "frame",
-          "id": "VqJPG",
-          "name": "portGrid2",
+          "id": "aTczL",
+          "name": "projectsGrid",
           "width": "fill_container",
           "layout": "vertical",
           "gap": 32,
           "padding": [
-            0,
+            80,
             48
           ],
           "children": [
             {
               "type": "frame",
-              "id": "bOwCs",
-              "name": "portRow1",
+              "id": "ZcHUY",
+              "name": "projRow1",
               "width": "fill_container",
               "gap": 24,
               "children": [
                 {
                   "type": "frame",
-                  "id": "FncTD",
-                  "name": "p1",
+                  "id": "xfWjM",
+                  "name": "proj1",
+                  "clip": true,
                   "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
+                  "height": 500,
+                  "cornerRadius": 16,
+                  "layout": "none",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "AIFcZ",
+                      "id": "zTjrk",
+                      "x": 0,
+                      "y": 0,
+                      "name": "proj1Img",
                       "metadata": {
                         "type": "unsplash",
-                        "username": "retratoinmobiliario",
-                        "link": "https://unsplash.com/@retratoinmobiliario",
-                        "author": "RETRATO INMOBILIARIO"
+                        "username": "moonlightendearer",
+                        "link": "https://unsplash.com/@moonlightendearer",
+                        "author": "Moonlight Endearer"
                       },
-                      "width": "fill_container",
+                      "width": 700,
                       "height": 500,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1762810944373-d3cd437cbd1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "url": "https://images.unsplash.com/photo-1774390261146-18af6da7b4d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAwMzcyODF8&ixlib=rb-4.1.0&q=80&w=1080",
                         "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lecqy",
+                      "x": 0,
+                      "y": 0,
+                      "name": "proj1Overlay",
+                      "opacity": 0.4,
+                      "width": 700,
+                      "height": 500,
+                      "fill": "#000000"
                     },
                     {
                       "type": "text",
-                      "id": "w5Za4O",
-                      "fill": "#FAFAFA",
-                      "content": "Орон сууцны төсөл",
+                      "id": "ETJ2T",
+                      "x": 24,
+                      "y": 400,
+                      "name": "proj1Num",
+                      "fill": "#FFFFFF",
+                      "content": "01",
                       "fontFamily": "Inter",
-                      "fontSize": 20,
+                      "fontSize": 64,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OBAFp",
+                      "x": 24,
+                      "y": 490,
+                      "name": "proj1Detail",
+                      "fill": "#FFFFFF",
+                      "content": "Дэлгэрэнгүй →",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
                       "fontWeight": "500"
                     },
                     {
                       "type": "text",
-                      "id": "CLGLx",
-                      "fill": "#9A9590",
-                      "content": "Улаанбаатар, Монгол — 2025",
+                      "id": "timKJ",
+                      "x": 24,
+                      "y": 456,
+                      "name": "proj1Name",
+                      "fill": "#FFFFFF",
+                      "content": "KHAN OYU RESIDENCE",
                       "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "fontSize": 28,
+                      "fontWeight": "700"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "c71qu",
-                  "name": "p2",
+                  "id": "TXIwL",
+                  "name": "proj2",
+                  "clip": true,
                   "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
+                  "height": 500,
+                  "cornerRadius": 16,
+                  "layout": "none",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "aTCJN",
+                      "id": "GI0EY",
+                      "x": 0,
+                      "y": 0,
+                      "name": "proj2Img",
                       "metadata": {
                         "type": "unsplash",
-                        "username": "alteredpoint",
-                        "link": "https://unsplash.com/@alteredpoint",
-                        "author": "Igor Saikin"
+                        "username": "schneiderhenry",
+                        "link": "https://unsplash.com/@schneiderhenry",
+                        "author": "Henry Schneider"
                       },
-                      "width": "fill_container",
+                      "width": 700,
                       "height": 500,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1764539780901-0a13bf4f4182?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "url": "https://images.unsplash.com/photo-1764013048522-6dbd35300b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAwMzcyODJ8&ixlib=rb-4.1.0&q=80&w=1080",
                         "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      }
                     },
-                    {
-                      "type": "text",
-                      "id": "J4vN8a",
-                      "fill": "#FAFAFA",
-                      "content": "Оффисын төсөл",
-                      "fontFamily": "Inter",
-                      "fontSize": 20,
-                      "fontWeight": "500"
-                    },
-                    {
-                      "type": "text",
-                      "id": "R47Vp",
-                      "fill": "#9A9590",
-                      "content": "Улаанбаатар, Монгол — 2025",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "f4WRqw",
-                  "name": "p3",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
                     {
                       "type": "frame",
-                      "id": "vPVYT",
-                      "metadata": {
-                        "type": "unsplash",
-                        "username": "sr_engineersandconsultants",
-                        "link": "https://unsplash.com/@sr_engineersandconsultants",
-                        "author": "SR Engineers and Consultants"
-                      },
-                      "width": "fill_container",
+                      "id": "vfisK",
+                      "x": 0,
+                      "y": 0,
+                      "name": "proj2Overlay",
+                      "opacity": 0.4,
+                      "width": 700,
                       "height": 500,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1775113895544-40f0efa4dac4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NDl8&ixlib=rb-4.1.0&q=80&w=1080",
-                        "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      "fill": "#000000"
                     },
                     {
                       "type": "text",
-                      "id": "VvHQa",
-                      "fill": "#FAFAFA",
-                      "content": "Зочид буудлын төсөл",
+                      "id": "LldEc",
+                      "x": 24,
+                      "y": 400,
+                      "name": "proj2Num",
+                      "fill": "#FFFFFF",
+                      "content": "02",
                       "fontFamily": "Inter",
-                      "fontSize": 20,
+                      "fontSize": 64,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sLza1",
+                      "x": 24,
+                      "y": 490,
+                      "name": "proj2Detail",
+                      "fill": "#FFFFFF",
+                      "content": "Дэлгэрэнгүй →",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
                       "fontWeight": "500"
                     },
                     {
                       "type": "text",
-                      "id": "UQZ6R",
-                      "fill": "#9A9590",
-                      "content": "Улаанбаатар, Монгол — 2024",
+                      "id": "SX3DU",
+                      "x": 24,
+                      "y": 456,
+                      "name": "proj2Name",
+                      "fill": "#FFFFFF",
+                      "content": "Z64 Орон сууц",
                       "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "fontSize": 28,
+                      "fontWeight": "700"
                     }
                   ]
                 }
@@ -2891,149 +3030,168 @@
             },
             {
               "type": "frame",
-              "id": "Q37eZH",
-              "name": "portRow2",
+              "id": "X2UJMJ",
+              "name": "projRow2",
               "width": "fill_container",
               "gap": 24,
               "children": [
                 {
                   "type": "frame",
-                  "id": "r4ftSK",
-                  "name": "p4",
+                  "id": "UwVrH",
+                  "name": "proj3",
+                  "clip": true,
                   "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
+                  "height": 500,
+                  "cornerRadius": 16,
+                  "layout": "none",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "wEYjg",
+                      "id": "Xostj",
+                      "x": 0,
+                      "y": 0,
+                      "name": "proj3Img",
                       "metadata": {
                         "type": "unsplash",
-                        "username": "moizkhan11101",
-                        "link": "https://unsplash.com/@moizkhan11101",
-                        "author": "Moiz Khan"
+                        "username": "zoshuacolah",
+                        "link": "https://unsplash.com/@zoshuacolah",
+                        "author": "Zoshua Colah"
                       },
-                      "width": "fill_container",
+                      "width": 700,
                       "height": 500,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1772400523270-0d34b0e6ca1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "url": "https://images.unsplash.com/photo-1748437324239-6f568a6ce4a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAwMzcyODN8&ixlib=rb-4.1.0&q=80&w=1080",
                         "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h5ocrP",
+                      "x": 0,
+                      "y": 0,
+                      "name": "proj3Overlay",
+                      "opacity": 0.4,
+                      "width": 700,
+                      "height": 500,
+                      "fill": "#000000"
                     },
                     {
                       "type": "text",
-                      "id": "a75WU",
-                      "fill": "#FAFAFA",
-                      "content": "Рестораны төсөл",
+                      "id": "RWKyt",
+                      "x": 24,
+                      "y": 400,
+                      "name": "proj3Num",
+                      "fill": "#FFFFFF",
+                      "content": "03",
                       "fontFamily": "Inter",
-                      "fontSize": 20,
+                      "fontSize": 64,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BLG3y",
+                      "x": 24,
+                      "y": 490,
+                      "name": "proj3Detail",
+                      "fill": "#FFFFFF",
+                      "content": "Дэлгэрэнгүй →",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
                       "fontWeight": "500"
                     },
                     {
                       "type": "text",
-                      "id": "EYubc",
-                      "fill": "#9A9590",
-                      "content": "Улаанбаатар, Монгол — 2024",
+                      "id": "bfnpp",
+                      "x": 24,
+                      "y": 456,
+                      "name": "proj3Name",
+                      "fill": "#FFFFFF",
+                      "content": "SUNDAY PLAZA",
                       "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "fontSize": 28,
+                      "fontWeight": "700"
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "scEiL",
-                  "name": "p5",
+                  "id": "OGZSq",
+                  "name": "proj4",
+                  "clip": true,
                   "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
+                  "height": 500,
+                  "cornerRadius": 16,
+                  "layout": "none",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "vBdqF",
+                      "id": "w7tC6p",
+                      "x": 0,
+                      "y": 0,
+                      "name": "proj4Img",
                       "metadata": {
                         "type": "unsplash",
-                        "username": "framesforyourheart",
-                        "link": "https://unsplash.com/@framesforyourheart",
-                        "author": "Frames For Your Heart"
+                        "username": "leesoohong",
+                        "link": "https://unsplash.com/@leesoohong",
+                        "author": "Soo hong Lee"
                       },
-                      "width": "fill_container",
+                      "width": 700,
                       "height": 500,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "url": "https://images.unsplash.com/photo-1760921678729-9658c8b792bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODAwMzcyODV8&ixlib=rb-4.1.0&q=80&w=1080",
                         "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      }
                     },
-                    {
-                      "type": "text",
-                      "id": "MqakM",
-                      "fill": "#FAFAFA",
-                      "content": "Виллагийн төсөл",
-                      "fontFamily": "Inter",
-                      "fontSize": 20,
-                      "fontWeight": "500"
-                    },
-                    {
-                      "type": "text",
-                      "id": "O7avU",
-                      "fill": "#9A9590",
-                      "content": "Улаанбаатар, Монгол — 2024",
-                      "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "xeUeK",
-                  "name": "p6",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 12,
-                  "children": [
                     {
                       "type": "frame",
-                      "id": "A4Dms",
-                      "metadata": {
-                        "type": "unsplash",
-                        "username": "fayflora",
-                        "link": "https://unsplash.com/@fayflora",
-                        "author": "Leo Liu"
-                      },
-                      "width": "fill_container",
+                      "id": "pQVFh",
+                      "x": 0,
+                      "y": 0,
+                      "name": "proj4Overlay",
+                      "opacity": 0.4,
+                      "width": 700,
                       "height": 500,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1762907340502-28fc3fe32ecd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzgyNDE5NTF8&ixlib=rb-4.1.0&q=80&w=1080",
-                        "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      "fill": "#000000"
                     },
                     {
                       "type": "text",
-                      "id": "oZjf6",
-                      "fill": "#FAFAFA",
-                      "content": "Кафены төсөл",
+                      "id": "JmDnD",
+                      "x": 24,
+                      "y": 400,
+                      "name": "proj4Num",
+                      "fill": "#FFFFFF",
+                      "content": "04",
                       "fontFamily": "Inter",
-                      "fontSize": 20,
+                      "fontSize": 64,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UDTqw",
+                      "x": 24,
+                      "y": 490,
+                      "name": "proj4Detail",
+                      "fill": "#FFFFFF",
+                      "content": "Дэлгэрэнгүй →",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
                       "fontWeight": "500"
                     },
                     {
                       "type": "text",
-                      "id": "k8v6y",
-                      "fill": "#9A9590",
-                      "content": "Улаанбаатар, Монгол — 2023",
+                      "id": "E1t5d7",
+                      "x": 24,
+                      "y": 456,
+                      "name": "proj4Name",
+                      "fill": "#FFFFFF",
+                      "content": "ТЭЭВЭР ЛОЖИСТИКИЙН ТӨВ",
                       "fontFamily": "Inter",
-                      "fontSize": 14,
-                      "fontWeight": "normal"
+                      "fontSize": 28,
+                      "fontWeight": "700"
                     }
                   ]
                 }
@@ -3046,8 +3204,8 @@
     {
       "type": "frame",
       "id": "xkfKU",
-      "x": 1540,
-      "y": 6232,
+      "x": 5135,
+      "y": 2121,
       "name": "Blog Page",
       "width": 1440,
       "fill": "#0D0D0D",
@@ -3405,8 +3563,8 @@
     {
       "type": "frame",
       "id": "k6UDaA",
-      "x": 1540,
-      "y": 7259,
+      "x": 6915,
+      "y": 2225,
       "name": "Services Page",
       "width": 1440,
       "fill": "#0D0D0D",
@@ -3650,8 +3808,8 @@
     {
       "type": "frame",
       "id": "hhvAB",
-      "x": 3080,
-      "y": 0,
+      "x": 5475,
+      "y": 17,
       "name": "AI Customizer Page",
       "width": 1440,
       "fill": "#0D0D0D",

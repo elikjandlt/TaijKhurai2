@@ -10,8 +10,8 @@ import { useAuth } from "@/lib/auth-context";
 const navLabels: Record<string, Record<string, string>> = {
   mn: {
     home: "Нүүр",
-    about: "Бид",
-    works: "Бүтээгдэхүүнүүд",
+    about: "Бидний тухай",
+    works: "Төслүүд",
     aiCustomizer: "AI Захиалга",
     blog: "Блог",
     contact: "Холбоо барих",
@@ -20,7 +20,7 @@ const navLabels: Record<string, Record<string, string>> = {
   en: {
     home: "Home",
     about: "About",
-    works: "Products",
+    works: "Projects",
     aiCustomizer: "AI Customizer",
     blog: "Blog",
     contact: "Contact",
@@ -53,7 +53,7 @@ export default function Header() {
   const navItems = [
     { label: t.home, href: "/" },
     { label: t.about, href: "/about" },
-    { label: t.works, href: "/collections" },
+    { label: t.works, href: "/portfolio" },
     { label: t.aiCustomizer, href: "/ai-customizer" },
     { label: t.blog, href: "/blog" },
     { label: t.contact, href: "/contact" },
@@ -61,9 +61,9 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#0D0D0D]/95 backdrop-blur-sm border-b border-white/5">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#F5EFE6]/95 backdrop-blur-sm border-b border-[#D4C8B8]">
         <div className="max-w-[1440px] mx-auto px-12 h-20 flex items-center justify-between">
-          <Link href={localePath("/", locale)} className="text-[22px] font-semibold tracking-[2px] text-[#FAFAFA]">
+          <Link href={localePath("/", locale)} className="text-[22px] font-semibold tracking-[2px] text-[#2B2B2B]">
             Taij-Khurai
           </Link>
 
@@ -72,7 +72,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={localePath(item.href, locale)}
-                className="text-sm text-[#B5B0AB] transition-colors hover:text-[#FAFAFA]"
+                className="text-sm text-[#5A5A5A] transition-colors hover:text-[#2B2B2B]"
               >
                 {item.label}
               </Link>
@@ -82,18 +82,18 @@ export default function Header() {
           <div className="flex items-center gap-5">
             <button
               onClick={() => setShowSearch(true)}
-              className="text-[#B5B0AB] hover:text-[#FAFAFA] transition-colors"
+              className="text-[#5A5A5A] hover:text-[#2B2B2B] transition-colors"
             >
               <Search size={20} />
             </button>
 
             <button
               onClick={() => setShowCart(true)}
-              className="relative text-[#B5B0AB] hover:text-[#FAFAFA] transition-colors"
+              className="relative text-[#5A5A5A] hover:text-[#2B2B2B] transition-colors"
             >
               <ShoppingCart size={20} />
               {totalItems > 0 && (
-                <span className="absolute -top-2 -right-2 w-5 h-5 bg-[#C9A96E] text-[#0D0D0D] text-xs rounded-full flex items-center justify-center font-bold">
+                <span className="absolute -top-2 -right-2 w-5 h-5 bg-[#B08968] text-[#F5EFE6] text-xs rounded-full flex items-center justify-center font-bold">
                   {totalItems}
                 </span>
               )}
@@ -101,10 +101,10 @@ export default function Header() {
 
             {user ? (
               <div className="flex items-center gap-3">
-                <span className="text-sm text-[#B5B0AB]">{user.name}</span>
+                <span className="text-sm text-[#5A5A5A]">{user.name}</span>
                 <button
                   onClick={logout}
-                  className="text-xs text-[#9A9590] hover:text-[#FAFAFA] transition-colors"
+                  className="text-xs text-[#5A5A5A] hover:text-[#2B2B2B] transition-colors"
                 >
                   {locale === "mn" ? "Гарах" : "Logout"}
                 </button>
@@ -112,7 +112,7 @@ export default function Header() {
             ) : (
               <button
                 onClick={() => setShowAuth(true)}
-                className="text-[#B5B0AB] hover:text-[#FAFAFA] transition-colors"
+                className="text-[#5A5A5A] hover:text-[#2B2B2B] transition-colors"
               >
                 <User size={20} />
               </button>
@@ -121,7 +121,7 @@ export default function Header() {
             <LocaleSwitcher currentLocale={locale} />
             <Link
               href={localePath("/contact", locale)}
-              className="hidden sm:flex items-center px-6 py-3 bg-[#C9A96E] text-[#0D0D0D] text-[13px] font-medium rounded-sm hover:bg-[#B8985D] transition-colors"
+              className="hidden sm:flex items-center px-6 py-3 bg-[#B08968] text-[#F5EFE6] text-[13px] font-medium rounded-sm hover:bg-[#9A7658] transition-colors"
             >
               {t.bookConsultation}
             </Link>
@@ -133,47 +133,47 @@ export default function Header() {
       {showCart && (
         <div className="fixed inset-0 z-[100]">
           <div className="absolute inset-0 bg-[#0D0D0D]/80" onClick={() => setShowCart(false)} />
-          <div className="absolute right-0 top-0 bottom-0 w-full max-w-md bg-[#111111] border-l border-white/5 flex flex-col">
-            <div className="p-6 border-b border-white/5 flex items-center justify-between">
-              <h3 className="text-xl font-medium text-[#FAFAFA]">
+          <div className="absolute right-0 top-0 bottom-0 w-full max-w-md bg-[#E8D8C4] border-l border-[#D4C8B8] flex flex-col">
+            <div className="p-6 border-b border-[#D4C8B8] flex items-center justify-between">
+              <h3 className="text-xl font-medium text-[#2B2B2B]">
                 {locale === "mn" ? "Сагс" : "Cart"} ({totalItems})
               </h3>
-              <button onClick={() => setShowCart(false)} className="text-[#B5B0AB] hover:text-[#FAFAFA]">
+              <button onClick={() => setShowCart(false)} className="text-[#5A5A5A] hover:text-[#2B2B2B]">
                 <X size={24} />
               </button>
             </div>
 
             <div className="flex-1 overflow-y-auto p-6">
               {items.length === 0 ? (
-                <p className="text-center text-[#9A9590] py-12">
+                <p className="text-center text-[#5A5A5A] py-12">
                   {locale === "mn" ? "Сагс хоосон байна" : "Your cart is empty"}
                 </p>
               ) : (
                 <div className="space-y-4">
                   {items.map((item) => (
-                    <div key={item.id} className="flex gap-4 p-4 rounded-sm bg-white/[0.03]">
+                    <div key={item.id} className="flex gap-4 p-4 rounded-sm bg-[#F5EFE6]">
                       <img src={item.image} alt={item.name} className="w-20 h-20 object-cover rounded-sm" />
                       <div className="flex-1">
-                        <p className="text-sm text-[#FAFAFA] font-medium">{item.name}</p>
-                        <p className="text-xs text-[#9A9590] mb-2">{item.collection}</p>
-                        <p className="text-sm text-[#C9A96E] mb-2">{item.priceDisplay}</p>
+                        <p className="text-sm text-[#2B2B2B] font-medium">{item.name}</p>
+                        <p className="text-xs text-[#5A5A5A] mb-2">{item.collection}</p>
+                        <p className="text-sm text-[#B08968] mb-2">{item.priceDisplay}</p>
                         <div className="flex items-center gap-2">
                           <button
                             onClick={() => updateQty(item.id, item.qty - 1)}
-                            className="w-7 h-7 rounded-sm bg-white/[0.05] flex items-center justify-center text-[#B5B0AB] hover:bg-white/10"
+                            className="w-7 h-7 rounded-sm bg-[#E8D8C4] flex items-center justify-center text-[#5A5A5A] hover:bg-[#D4C8B8]"
                           >
                             <Minus size={14} />
                           </button>
-                          <span className="text-sm text-[#FAFAFA] w-6 text-center">{item.qty}</span>
+                          <span className="text-sm text-[#2B2B2B] w-6 text-center">{item.qty}</span>
                           <button
                             onClick={() => updateQty(item.id, item.qty + 1)}
-                            className="w-7 h-7 rounded-sm bg-white/[0.05] flex items-center justify-center text-[#B5B0AB] hover:bg-white/10"
+                            className="w-7 h-7 rounded-sm bg-[#E8D8C4] flex items-center justify-center text-[#5A5A5A] hover:bg-[#D4C8B8]"
                           >
                             <Plus size={14} />
                           </button>
                           <button
                             onClick={() => removeItem(item.id)}
-                            className="ml-auto text-[#9A9590] hover:text-red-400"
+                            className="ml-auto text-[#5A5A5A] hover:text-red-400"
                           >
                             <Trash2 size={16} />
                           </button>
@@ -186,14 +186,14 @@ export default function Header() {
             </div>
 
             {items.length > 0 && (
-              <div className="p-6 border-t border-white/5">
+              <div className="p-6 border-t border-[#D4C8B8]">
                 <div className="flex justify-between mb-4">
-                  <span className="text-[#B5B0AB]">{locale === "mn" ? "Нийт:" : "Total:"}</span>
-                  <span className="text-[#FAFAFA] font-semibold">{totalPrice.toLocaleString()}₮</span>
+                  <span className="text-[#5A5A5A]">{locale === "mn" ? "Нийт:" : "Total:"}</span>
+                  <span className="text-[#2B2B2B] font-semibold">{totalPrice.toLocaleString()}₮</span>
                 </div>
                 <button
                   onClick={() => { setShowCart(false); setShowCheckout(true); }}
-                  className="w-full py-4 bg-[#C9A96E] text-[#0D0D0D] text-sm font-semibold rounded-sm hover:bg-[#B8985D] transition-colors"
+                  className="w-full py-4 bg-[#B08968] text-[#F5EFE6] text-sm font-semibold rounded-sm hover:bg-[#9A7658] transition-colors"
                 >
                   {locale === "mn" ? "Захиалга баталгаажуулах" : "Proceed to Checkout"}
                 </button>
@@ -247,12 +247,12 @@ function AuthModal({ onClose, mode, setMode, locale }: { onClose: () => void; mo
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-[#0D0D0D]/90" onClick={onClose} />
-      <div className="relative bg-[#111111] rounded-sm max-w-md w-full p-8 border border-white/5">
-        <button onClick={onClose} className="absolute top-4 right-4 text-[#B5B0AB] hover:text-[#FAFAFA]">
+      <div className="relative bg-[#E8D8C4] rounded-sm max-w-md w-full p-8 border border-[#D4C8B8]">
+        <button onClick={onClose} className="absolute top-4 right-4 text-[#5A5A5A] hover:text-[#2B2B2B]">
           <X size={20} />
         </button>
 
-        <h3 className="text-2xl font-medium text-[#FAFAFA] mb-6 text-center">
+        <h3 className="text-2xl font-medium text-[#2B2B2B] mb-6 text-center">
           {mode === "login"
             ? locale === "mn" ? "Нэвтрэх" : "Login"
             : locale === "mn" ? "Бүртгүүлэх" : "Register"}
@@ -261,33 +261,33 @@ function AuthModal({ onClose, mode, setMode, locale }: { onClose: () => void; mo
         <form onSubmit={handleSubmit} className="space-y-4">
           {mode === "register" && (
             <div>
-              <label className="block text-xs text-[#9A9590] mb-2">{locale === "mn" ? "Нэр" : "Name"}</label>
+              <label className="block text-xs text-[#5A5A5A] mb-2">{locale === "mn" ? "Нэр" : "Name"}</label>
               <input
                 type="text"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] focus:outline-none focus:border-[#C9A96E]/50"
+                className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] focus:outline-none focus:border-[#B08968]/50"
                 required
               />
             </div>
           )}
           <div>
-            <label className="block text-xs text-[#9A9590] mb-2">Email</label>
+            <label className="block text-xs text-[#5A5A5A] mb-2">Email</label>
             <input
               type="email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
-              className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] focus:outline-none focus:border-[#C9A96E]/50"
+              className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] focus:outline-none focus:border-[#B08968]/50"
               required
             />
           </div>
           <div>
-            <label className="block text-xs text-[#9A9590] mb-2">{locale === "mn" ? "Нууц үг" : "Password"}</label>
+            <label className="block text-xs text-[#5A5A5A] mb-2">{locale === "mn" ? "Нууц үг" : "Password"}</label>
             <input
               type="password"
               value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
-              className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] focus:outline-none focus:border-[#C9A96E]/50"
+              className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] focus:outline-none focus:border-[#B08968]/50"
               required
             />
           </div>
@@ -296,7 +296,7 @@ function AuthModal({ onClose, mode, setMode, locale }: { onClose: () => void; mo
 
           <button
             type="submit"
-            className="w-full py-4 bg-[#C9A96E] text-[#0D0D0D] text-sm font-semibold rounded-sm hover:bg-[#B8985D] transition-colors"
+            className="w-full py-4 bg-[#B08968] text-[#F5EFE6] text-sm font-semibold rounded-sm hover:bg-[#9A7658] transition-colors"
           >
             {mode === "login"
               ? locale === "mn" ? "Нэвтрэх" : "Login"
@@ -304,13 +304,13 @@ function AuthModal({ onClose, mode, setMode, locale }: { onClose: () => void; mo
           </button>
         </form>
 
-        <p className="text-center text-sm text-[#9A9590] mt-4">
+        <p className="text-center text-sm text-[#5A5A5A] mt-4">
           {mode === "login"
             ? locale === "mn" ? "Бүртгэлгүй юу? " : "No account? "
             : locale === "mn" ? "Бүртгэлтэй юу? " : "Already have an account? "}
           <button
             onClick={() => setMode(mode === "login" ? "register" : "login")}
-            className="text-[#C9A96E] hover:text-[#B8985D]"
+            className="text-[#B08968] hover:text-[#9A7658]"
           >
             {mode === "login"
               ? locale === "mn" ? "Бүртгүүлэх" : "Register"
@@ -359,8 +359,8 @@ function CheckoutModal({
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-[#0D0D0D]/90" onClick={onClose} />
-      <div className="relative bg-[#111111] rounded-sm max-w-lg w-full max-h-[90vh] overflow-y-auto border border-white/5 p-8">
-        <button onClick={onClose} className="absolute top-4 right-4 text-[#B5B0AB] hover:text-[#FAFAFA]">
+      <div className="relative bg-[#E8D8C4] rounded-sm max-w-lg w-full max-h-[90vh] overflow-y-auto border border-[#D4C8B8] p-8">
+        <button onClick={onClose} className="absolute top-4 right-4 text-[#5A5A5A] hover:text-[#2B2B2B]">
           <X size={20} />
         </button>
 
@@ -369,91 +369,91 @@ function CheckoutModal({
             <div className="w-16 h-16 rounded-full bg-green-600/20 flex items-center justify-center mx-auto mb-4">
               <Check size={32} className="text-green-500" />
             </div>
-            <h3 className="text-2xl font-medium text-[#FAFAFA] mb-2">
+            <h3 className="text-2xl font-medium text-[#2B2B2B] mb-2">
               {isEn ? "Order Placed!" : "Захиалга амжилттай!"}
             </h3>
-            <p className="text-sm text-[#B5B0AB] mb-6">
+            <p className="text-sm text-[#5A5A5A] mb-6">
               {isEn
                 ? "Thank you! We will contact you soon to confirm your order."
                 : "Баярлалаа! Бид удахгүй тантай холбогдож захиалгаа баталгаажуулах болно."}
             </p>
             <button
               onClick={onClose}
-              className="px-8 py-3 bg-[#C9A96E] text-[#0D0D0D] text-sm font-semibold rounded-sm hover:bg-[#B8985D] transition-colors"
+              className="px-8 py-3 bg-[#B08968] text-[#F5EFE6] text-sm font-semibold rounded-sm hover:bg-[#9A7658] transition-colors"
             >
               {isEn ? "Close" : "Хаах"}
             </button>
           </div>
         ) : (
           <>
-            <h3 className="text-2xl font-medium text-[#FAFAFA] mb-6">
+            <h3 className="text-2xl font-medium text-[#2B2B2B] mb-6">
               {isEn ? "Checkout" : "Захиалга баталгаажуулах"}
             </h3>
 
             {/* Order Summary */}
-            <div className="mb-6 p-4 rounded-sm bg-white/[0.03] border border-white/5">
-              <h4 className="text-sm font-semibold text-[#FAFAFA] mb-3">
+            <div className="mb-6 p-4 rounded-sm bg-[#F5EFE6] border border-[#D4C8B8]">
+              <h4 className="text-sm font-semibold text-[#2B2B2B] mb-3">
                 {isEn ? "Order Summary" : "Захиалгын мэдээлэл"}
               </h4>
               <div className="space-y-2">
                 {items.map((item) => (
                   <div key={item.id} className="flex justify-between text-sm">
-                    <span className="text-[#B5B0AB]">
+                    <span className="text-[#5A5A5A]">
                       {item.name} x{item.qty}
                     </span>
-                    <span className="text-[#FAFAFA]">{(item.price * item.qty).toLocaleString()}₮</span>
+                    <span className="text-[#2B2B2B]">{(item.price * item.qty).toLocaleString()}₮</span>
                   </div>
                 ))}
               </div>
-              <div className="mt-3 pt-3 border-t border-white/5 flex justify-between">
-                <span className="text-[#B5B0AB] font-semibold">{isEn ? "Total:" : "Нийт:"}</span>
-                <span className="text-[#C9A96E] font-semibold">{totalPrice.toLocaleString()}₮</span>
+              <div className="mt-3 pt-3 border-t border-[#D4C8B8] flex justify-between">
+                <span className="text-[#5A5A5A] font-semibold">{isEn ? "Total:" : "Нийт:"}</span>
+                <span className="text-[#B08968] font-semibold">{totalPrice.toLocaleString()}₮</span>
               </div>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs text-[#9A9590] mb-2">{isEn ? "Full Name" : "Бүтэн нэр"}</label>
+                <label className="block text-xs text-[#5A5A5A] mb-2">{isEn ? "Full Name" : "Бүтэн нэр"}</label>
                 <input
                   type="text"
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] focus:outline-none focus:border-[#C9A96E]/50"
+                  className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] focus:outline-none focus:border-[#B08968]/50"
                   required
                 />
               </div>
               <div>
-                <label className="block text-xs text-[#9A9590] mb-2">{isEn ? "Phone" : "Утас"}</label>
+                <label className="block text-xs text-[#5A5A5A] mb-2">{isEn ? "Phone" : "Утас"}</label>
                 <input
                   type="tel"
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] focus:outline-none focus:border-[#C9A96E]/50"
+                  className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] focus:outline-none focus:border-[#B08968]/50"
                   required
                 />
               </div>
               <div>
-                <label className="block text-xs text-[#9A9590] mb-2">{isEn ? "Address" : "Хаяг"}</label>
+                <label className="block text-xs text-[#5A5A5A] mb-2">{isEn ? "Address" : "Хаяг"}</label>
                 <textarea
                   value={form.address}
                   onChange={(e) => setForm({ ...form, address: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] focus:outline-none focus:border-[#C9A96E]/50 resize-none"
+                  className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] focus:outline-none focus:border-[#B08968]/50 resize-none"
                   rows={3}
                   required
                 />
               </div>
               <div>
-                <label className="block text-xs text-[#9A9590] mb-2">{isEn ? "Notes (optional)" : "Нэмэлт мэдээлэл (сонголттой)"}</label>
+                <label className="block text-xs text-[#5A5A5A] mb-2">{isEn ? "Notes (optional)" : "Нэмэлт мэдээлэл (сонголттой)"}</label>
                 <textarea
                   value={form.notes}
                   onChange={(e) => setForm({ ...form, notes: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-sm text-sm text-[#FAFAFA] focus:outline-none focus:border-[#C9A96E]/50 resize-none"
+                  className="w-full px-4 py-3 bg-[#F5EFE6] border border-[#D4C8B8] rounded-sm text-sm text-[#2B2B2B] focus:outline-none focus:border-[#B08968]/50 resize-none"
                   rows={2}
                 />
               </div>
               <button
                 type="submit"
-                className="w-full py-4 bg-[#C9A96E] text-[#0D0D0D] text-sm font-semibold rounded-sm hover:bg-[#B8985D] transition-colors"
+                className="w-full py-4 bg-[#B08968] text-[#F5EFE6] text-sm font-semibold rounded-sm hover:bg-[#9A7658] transition-colors"
               >
                 {isEn ? "Place Order" : "Захиалах"}
               </button>
@@ -508,25 +508,25 @@ function SearchModal({ onClose, locale }: { onClose: () => void; locale: string 
   return (
     <div className="fixed inset-0 z-[100] flex items-start justify-center pt-24 px-4">
       <div className="absolute inset-0 bg-[#0D0D0D]/90" onClick={onClose} />
-      <div className="relative bg-[#111111] rounded-sm max-w-xl w-full border border-white/5 overflow-hidden">
-        <div className="p-4 border-b border-white/5 flex items-center gap-3">
-          <Search size={20} className="text-[#9A9590]" />
+      <div className="relative bg-[#E8D8C4] rounded-sm max-w-xl w-full border border-[#D4C8B8] overflow-hidden">
+        <div className="p-4 border-b border-[#D4C8B8] flex items-center gap-3">
+          <Search size={20} className="text-[#5A5A5A]" />
           <input
             type="text"
             autoFocus
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={isEn ? "Search products, services..." : "Бүтээгдэхүүн, үйлчилгээ хайх..."}
-            className="flex-1 bg-transparent text-sm text-[#FAFAFA] placeholder:text-[#5A5A5A] focus:outline-none"
+            className="flex-1 bg-transparent text-sm text-[#2B2B2B] placeholder:text-[#5A5A5A] focus:outline-none"
           />
-          <button onClick={onClose} className="text-[#9A9590] hover:text-[#FAFAFA]">
+          <button onClick={onClose} className="text-[#5A5A5A] hover:text-[#2B2B2B]">
             <X size={18} />
           </button>
         </div>
 
         <div className="max-h-[60vh] overflow-y-auto">
           {query.length >= 2 && results.length === 0 && (
-            <p className="p-4 text-sm text-[#9A9590] text-center">
+            <p className="p-4 text-sm text-[#5A5A5A] text-center">
               {isEn ? "No results found" : "Илэрц олдсонгүй"}
             </p>
           )}
@@ -535,13 +535,13 @@ function SearchModal({ onClose, locale }: { onClose: () => void; locale: string 
               key={i}
               href={lp(item.href)}
               onClick={onClose}
-              className="flex items-center gap-3 p-4 hover:bg-white/[0.03] transition-colors border-b border-white/5 last:border-0"
+              className="flex items-center gap-3 p-4 hover:bg-[#F5EFE6] transition-colors border-b border-[#D4C8B8] last:border-0"
             >
-              <Search size={14} className="text-[#9A9590]" />
-              <span className="text-sm text-[#FAFAFA]">
+              <Search size={14} className="text-[#5A5A5A]" />
+              <span className="text-sm text-[#2B2B2B]">
                 {isEn ? item.nameEn : item.name}
               </span>
-              <ArrowRight size={12} className="text-[#9A9590] ml-auto" />
+              <ArrowRight size={12} className="text-[#5A5A5A] ml-auto" />
             </Link>
           ))}
         </div>
@@ -558,7 +558,7 @@ function LocaleSwitcher({ currentLocale }: { currentLocale: string }) {
   return (
     <Link
       href={newPath}
-      className="text-[13px] text-[#9A9590] hover:text-[#FAFAFA] transition-colors"
+      className="text-[13px] text-[#5A5A5A] hover:text-[#2B2B2B] transition-colors"
     >
       {currentLocale === "mn" ? "MN | EN" : "EN | MN"}
     </Link>

@@ -35,7 +35,7 @@ export default function HeroSection({ locale }: { locale: string }) {
       <div className="relative z-10 max-w-[1440px] mx-auto px-12 py-32">
         <div className="max-w-2xl">
           <FadeIn delay={0}>
-            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-6">
+            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-6">
               {content.label}
             </span>
           </FadeIn>
@@ -47,7 +47,7 @@ export default function HeroSection({ locale }: { locale: string }) {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <p className="text-lg leading-relaxed text-[#B5B0AB] mb-10 max-w-lg">
+            <p className="text-lg leading-relaxed text-[#5A5A5A] mb-10 max-w-lg">
               {content.subtitle}
             </p>
           </FadeIn>
@@ -56,14 +56,14 @@ export default function HeroSection({ locale }: { locale: string }) {
             <div className="flex items-center gap-4">
               <Link
                 href={lp("/ai-customizer")}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-[#C9A96E] text-[#0D0D0D] text-sm font-semibold rounded-sm hover:bg-[#B8985D] transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-[#B08968] text-[#F5EFE6] text-sm font-semibold rounded-sm hover:bg-[#9A7658] transition-colors"
               >
                 <Sparkles size={16} />
                 {content.ctaPrimary}
               </Link>
               <Link
                 href={lp("/contact")}
-                className="inline-flex items-center gap-2 px-8 py-4 border border-[#FAFAFA]/20 text-[#FAFAFA] text-sm font-medium rounded-sm hover:border-[#FAFAFA]/40 transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-4 border border-[#2B2B2B]/20 text-[#FAFAFA] text-sm font-medium rounded-sm hover:border-[#2B2B2B]/40 transition-colors"
               >
                 {content.ctaSecondary}
                 <ArrowRight size={16} />

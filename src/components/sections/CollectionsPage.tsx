@@ -91,17 +91,17 @@ export default function CollectionsPage({ locale }: { locale: string }) {
       <section className="pt-32 pb-16">
         <div className="max-w-[1440px] mx-auto px-12">
           <FadeIn>
-            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-3">
               {isEn ? "PRODUCTS" : "БҮТЭЭГДЭХҮҮНҮҮД"}
             </span>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="text-[48px] font-light text-[#FAFAFA] mb-6">
+            <h1 className="text-[48px] font-light text-[#2B2B2B] mb-6">
               {isEn ? "Our Products" : "Манай бүтээгдэхүүнүүд"}
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-lg leading-relaxed text-[#B5B0AB] max-w-2xl">
+            <p className="text-lg leading-relaxed text-[#5A5A5A] max-w-2xl">
               {isEn
                 ? "Handcrafted furniture collections designed for modern Mongolian homes."
                 : "Орчин үеийн Монгол гэр бүлд зориулсан гардан хийсэн тавилгын цуглуулга."}
@@ -111,15 +111,15 @@ export default function CollectionsPage({ locale }: { locale: string }) {
       </section>
 
       {/* Category Filter */}
-      <section className="py-6 bg-[#111111] border-y border-white/5">
+      <section className="py-6 bg-[#E8D8C4] border-y border-[#D4C8B8]">
         <div className="max-w-[1440px] mx-auto px-12">
           <div className="flex items-center gap-3 flex-wrap">
             <button
               onClick={() => setActiveCategory(null)}
               className={`px-5 py-2.5 rounded-sm text-sm font-medium transition-colors ${
                 activeCategory === null
-                  ? "bg-[#C9A96E] text-[#0D0D0D]"
-                  : "bg-white/[0.05] text-[#B5B0AB] hover:bg-white/10"
+                  ? "bg-[#B08968] text-[#F5EFE6]"
+                  : "bg-[#D4C8B8] text-[#5A5A5A] hover:bg-[#C8B8A8]"
               }`}
             >
               {isEn ? "All Collections" : "Бүх цуглуулга"}
@@ -130,8 +130,8 @@ export default function CollectionsPage({ locale }: { locale: string }) {
                 onClick={() => setActiveCategory(cat.id)}
                 className={`px-5 py-2.5 rounded-sm text-sm font-medium transition-colors ${
                   activeCategory === cat.id
-                    ? "bg-[#C9A96E] text-[#0D0D0D]"
-                    : "bg-white/[0.05] text-[#B5B0AB] hover:bg-white/10"
+                    ? "bg-[#B08968] text-[#F5EFE6]"
+                    : "bg-[#D4C8B8] text-[#5A5A5A] hover:bg-[#C8B8A8]"
                 }`}
               >
                 {cat.name[locale as keyof typeof cat.name]}
@@ -143,7 +143,7 @@ export default function CollectionsPage({ locale }: { locale: string }) {
 
       {/* Collections */}
       {displayedCategories.map((cat) => (
-        <section key={cat.id} className="py-20 bg-[#0D0D0D]">
+        <section key={cat.id} className="py-20 bg-[#F5EFE6]">
           <div className="max-w-[1440px] mx-auto px-12">
             {/* Category Header */}
             <FadeIn>
@@ -153,15 +153,15 @@ export default function CollectionsPage({ locale }: { locale: string }) {
                     <img src={cat.img} alt="" className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h2 className="text-[28px] font-light text-[#FAFAFA]">
+                    <h2 className="text-[28px] font-light text-[#2B2B2B]">
                       {cat.name[locale as keyof typeof cat.name]}
                     </h2>
-                    <p className="text-sm text-[#9A9590] mt-1">
+                    <p className="text-sm text-[#5A5A5A] mt-1">
                       {cat.desc[locale as keyof typeof cat.desc]}
                     </p>
                   </div>
                 </div>
-                <span className="text-sm text-[#9A9590]">
+                <span className="text-sm text-[#5A5A5A]">
                   {cat.items.length} {isEn ? "items" : "бараа"}
                 </span>
               </div>
@@ -172,29 +172,29 @@ export default function CollectionsPage({ locale }: { locale: string }) {
               {cat.items.map((item, i) => (
                 <FadeIn key={item.id} delay={i * 0.05}>
                   <div className="group">
-                    <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-4 bg-[#111111]">
+                    <div className="relative aspect-[4/3] rounded-sm overflow-hidden mb-4 bg-[#E8D8C4]">
                       <img
                         src={item.img}
                         alt={item.name[locale as keyof typeof item.name]}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       {item.tag && (
-                        <span className="absolute top-3 left-3 px-3 py-1 bg-[#C9A96E] text-[#0D0D0D] text-xs font-semibold rounded-sm">
+                        <span className="absolute top-3 left-3 px-3 py-1 bg-[#B08968] text-[#F5EFE6] text-xs font-semibold rounded-sm">
                           {item.tag[locale as keyof typeof item.tag]}
                         </span>
                       )}
                     </div>
-                    <h4 className="text-base font-medium text-[#FAFAFA] mb-1">
+                    <h4 className="text-base font-medium text-[#2B2B2B] mb-1">
                       {item.name[locale as keyof typeof item.name]}
                     </h4>
-                    <p className="text-[#C9A96E] font-semibold text-sm mb-3">{item.priceDisplay}</p>
+                    <p className="text-[#B08968] font-semibold text-sm mb-3">{item.priceDisplay}</p>
                     <button
                       onClick={() => handleAdd(item, cat.name)}
                       disabled={addedIds[item.id]}
                       className={`w-full py-2.5 text-sm font-semibold rounded-sm transition-colors flex items-center justify-center gap-2 ${
                         addedIds[item.id]
                           ? "bg-green-600 text-white"
-                          : "bg-[#C9A96E] text-[#0D0D0D] hover:bg-[#B8985D]"
+                          : "bg-[#B08968] text-[#F5EFE6] hover:bg-[#9A7658]"
                       }`}
                     >
                       {addedIds[item.id] ? (
@@ -212,39 +212,39 @@ export default function CollectionsPage({ locale }: { locale: string }) {
       ))}
 
       {/* Services Intro */}
-      <section className="py-20 bg-[#111111] border-t border-white/5">
+      <section className="py-20 bg-[#E8D8C4] border-t border-[#D4C8B8]">
         <div className="max-w-[1440px] mx-auto px-12">
           <FadeIn>
             <div className="max-w-3xl">
-              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-4">
+              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-4">
                 {isEn ? "SERVICES" : "ҮЙЛЧИЛГЭЭ"}
               </span>
-              <h2 className="text-[32px] font-light text-[#FAFAFA] mb-6">
+              <h2 className="text-[32px] font-light text-[#2B2B2B] mb-6">
                 {isEn ? "Custom Furniture Crafted for You" : "Танд зориулсан захиалгат тавилга"}
               </h2>
-              <p className="text-base leading-relaxed text-[#B5B0AB] mb-8">
+              <p className="text-base leading-relaxed text-[#5A5A5A] mb-8">
                 {isEn
                   ? "Beyond our ready-made collections, we offer fully custom furniture services. From initial concept and 3D visualization to final handcrafted delivery — every piece is made to fit your space, style, and story."
                   : "Бидний бэлэн цуглуулгаас гадна бүрэн захиалгат тавилгын үйлчилгээ үзүүлдэг. Эхлэлийн концепц, 3D дүрслэлээс эхлээд гардан хийсэн эцсийн бүтээгдэхүүн хүртэл — бүх зүйл таны орон зай, хэв маяг, түүхэд тохируулан хийгддэг."}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div className="p-5 rounded-sm bg-white/[0.03] border border-white/5">
-                  <h4 className="text-sm font-semibold text-[#FAFAFA] mb-2">{isEn ? "AI Design" : "AI Дизайн"}</h4>
-                  <p className="text-xs text-[#9A9590] leading-relaxed">{isEn ? "Visualize your furniture before it's built with our AI customizer." : "Тавилгаа хийлгэхээсээ өмнө AI туслахаар хараарай."}</p>
+                <div className="p-5 rounded-sm bg-[#F5EFE6] border border-[#D4C8B8] shadow-sm">
+                  <h4 className="text-sm font-semibold text-[#2B2B2B] mb-2">{isEn ? "AI Design" : "AI Дизайн"}</h4>
+                  <p className="text-xs text-[#5A5A5A] leading-relaxed">{isEn ? "Visualize your furniture before it's built with our AI customizer." : "Тавилгаа хийлгэхээсээ өмнө AI туслахаар хараарай."}</p>
                 </div>
-                <div className="p-5 rounded-sm bg-white/[0.03] border border-white/5">
-                  <h4 className="text-sm font-semibold text-[#FAFAFA] mb-2">{isEn ? "Custom Dimensions" : "Хүссэн хэмжээ"}</h4>
-                  <p className="text-xs text-[#9A9590] leading-relaxed">{isEn ? "Any size, any shape — made to fit your exact space." : "Хүссэн хэмжээ, хэлбэрээр — таны орон зайд яг тааруулан."}</p>
+                <div className="p-5 rounded-sm bg-[#F5EFE6] border border-[#D4C8B8] shadow-sm">
+                  <h4 className="text-sm font-semibold text-[#2B2B2B] mb-2">{isEn ? "Custom Dimensions" : "Хүссэн хэмжээ"}</h4>
+                  <p className="text-xs text-[#5A5A5A] leading-relaxed">{isEn ? "Any size, any shape — made to fit your exact space." : "Хүссэн хэмжээ, хэлбэрээр — таны орон зайд яг тааруулан."}</p>
                 </div>
-                <div className="p-5 rounded-sm bg-white/[0.03] border border-white/5">
-                  <h4 className="text-sm font-semibold text-[#FAFAFA] mb-2">{isEn ? "Handcrafted" : "Гардан хийсэн"}</h4>
-                  <p className="text-xs text-[#9A9590] leading-relaxed">{isEn ? "Traditional Mongolian craftsmanship meets modern design." : "Монголын уламжлалт гар урлал, орчин үеийн дизайнтай хосолсон."}</p>
+                <div className="p-5 rounded-sm bg-[#F5EFE6] border border-[#D4C8B8] shadow-sm">
+                  <h4 className="text-sm font-semibold text-[#2B2B2B] mb-2">{isEn ? "Handcrafted" : "Гардан хийсэн"}</h4>
+                  <p className="text-xs text-[#5A5A5A] leading-relaxed">{isEn ? "Traditional Mongolian craftsmanship meets modern design." : "Монголын уламжлалт гар урлал, орчин үеийн дизайнтай хосолсон."}</p>
                 </div>
               </div>
               <div className="mt-8">
                 <Link
                   href={localePath("/ai-customizer", locale)}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#C9A96E] text-[#0D0D0D] text-sm font-semibold rounded-sm hover:bg-[#B8985D] transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#B08968] text-[#F5EFE6] text-sm font-semibold rounded-sm hover:bg-[#9A7658] transition-colors"
                 >
                   {isEn ? "Start AI Customizer" : "AI Захиалга эхлүүлэх"} <ArrowRight size={14} />
                 </Link>

@@ -90,7 +90,7 @@ export default function BlogPage({ locale }: { locale: string }) {
           <div className="max-w-[900px] mx-auto px-12">
             <button
               onClick={() => setActivePost(null)}
-              className="inline-flex items-center gap-2 text-sm text-[#C9A96E] hover:text-[#B8985D] transition-colors mb-8"
+              className="inline-flex items-center gap-2 text-sm text-[#B08968] hover:text-[#9A7658] transition-colors mb-8"
             >
               <ArrowLeft size={16} />
               {isEn ? "Back to Blog" : "Блог руу буцах"}
@@ -108,23 +108,23 @@ export default function BlogPage({ locale }: { locale: string }) {
 
             <FadeIn delay={0.1}>
               <div className="flex items-center gap-4 mb-6">
-                <span className="text-xs text-[#C9A96E]">{activePost.author}</span>
+                <span className="text-xs text-[#B08968]">{activePost.author}</span>
                 <span className="text-xs text-[#5A5A5A]">•</span>
-                <span className="text-xs text-[#9A9590] flex items-center gap-1">
+                <span className="text-xs text-[#5A5A5A] flex items-center gap-1">
                   <Calendar size={12} /> {activePost.date}
                 </span>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <h1 className="text-[36px] font-light text-[#FAFAFA] mb-8">
+              <h1 className="text-[36px] font-light text-[#2B2B2B] mb-8">
                 {activePost.title[locale as keyof typeof activePost.title]}
               </h1>
             </FadeIn>
 
             <FadeIn delay={0.3}>
               <div className="prose prose-invert max-w-none">
-                <p className="text-lg leading-relaxed text-[#B5B0AB]">
+                <p className="text-lg leading-relaxed text-[#5A5A5A]">
                   {activePost.content[locale as keyof typeof activePost.content]}
                 </p>
               </div>
@@ -137,20 +137,28 @@ export default function BlogPage({ locale }: { locale: string }) {
 
   return (
     <>
-      <section className="pt-32 pb-16">
-        <div className="max-w-[1440px] mx-auto px-12">
+      <section className="relative min-h-[420px] md:min-h-[480px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/blog/trends.jpg"
+            alt={isEn ? "Blog hero" : "Блог"}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#0D0D0D]/55" />
+        </div>
+        <div className="relative z-10 max-w-[800px] mx-auto px-6 text-center pt-20">
           <FadeIn>
-            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+            <span className="inline-block text-[12px] font-semibold tracking-[3px] text-[#B08968] mb-4 uppercase">
               {isEn ? "BLOG" : "БЛОГ"}
             </span>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="text-[48px] font-light text-[#FAFAFA] mb-6">
+            <h1 className="text-[36px] md:text-[48px] font-light text-[#FAFAFA] leading-[1.15] mb-5">
               {isEn ? "Inspiration & Insights" : "Сэдэл & Ойлголт"}
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-lg leading-relaxed text-[#B5B0AB] max-w-2xl">
+            <p className="text-base md:text-lg text-[#D4CFC9] max-w-xl mx-auto">
               {isEn
                 ? "Explore articles on furniture design, interior trends, and the art of Mongolian craftsmanship."
                 : "Тавилгын дизайн, дотоод заслын чиг хандлага, Монголын гар урлалын тухай нийтлэлүүдийг уншаарай."}
@@ -159,7 +167,7 @@ export default function BlogPage({ locale }: { locale: string }) {
         </div>
       </section>
 
-      <section className="py-16 bg-[#111111]">
+      <section className="py-16 bg-[#E8D8C4]">
         <div className="max-w-[1440px] mx-auto px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post, i) => (
@@ -176,14 +184,14 @@ export default function BlogPage({ locale }: { locale: string }) {
                     />
                   </div>
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-xs text-[#C9A96E]">{post.author}</span>
+                    <span className="text-xs text-[#B08968]">{post.author}</span>
                     <span className="text-xs text-[#5A5A5A]">•</span>
-                    <span className="text-xs text-[#9A9590]">{post.date}</span>
+                    <span className="text-xs text-[#5A5A5A]">{post.date}</span>
                   </div>
-                  <h3 className="text-lg font-medium text-[#FAFAFA] mb-2 group-hover:text-[#C9A96E] transition-colors">
+                  <h3 className="text-lg font-medium text-[#2B2B2B] mb-2 group-hover:text-[#B08968] transition-colors">
                     {post.title[locale as keyof typeof post.title]}
                   </h3>
-                  <p className="text-sm text-[#9A9590]">
+                  <p className="text-sm text-[#5A5A5A]">
                     {post.excerpt[locale as keyof typeof post.excerpt]}
                   </p>
                 </button>

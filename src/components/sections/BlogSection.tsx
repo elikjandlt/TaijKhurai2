@@ -19,21 +19,21 @@ export default function BlogSection({ locale }: { locale: string }) {
   }
 
   return (
-    <section className="py-24 bg-[#0D0D0D]">
+    <section className="py-24 bg-[#F5EFE6]">
       <div className="max-w-[1440px] mx-auto px-12">
         <FadeIn>
           <div className="flex items-end justify-between mb-12">
             <div>
-              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+              <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-3">
                 {isEn ? "BLOG" : "БЛОГ"}
               </span>
-              <h2 className="text-[36px] font-light text-[#FAFAFA]">
+              <h2 className="text-[36px] font-light text-[#2B2B2B]">
                 {isEn ? "Featured Articles" : "Онцлох нийтлэл"}
               </h2>
             </div>
             <Link
               href={lp("/blog")}
-              className="hidden sm:inline-flex items-center gap-2 text-sm text-[#C9A96E] hover:text-[#B8985D] transition-colors"
+              className="hidden sm:inline-flex items-center gap-2 text-sm text-[#B08968] hover:text-[#9A7658] transition-colors"
             >
               {isEn ? "View All →" : "Бүгдийг үзэх →"}
             </Link>
@@ -51,10 +51,10 @@ export default function BlogSection({ locale }: { locale: string }) {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <span className="text-xs text-[#C9A96E]">
+                <span className="text-xs text-[#B08968]">
                   {post.meta[locale as keyof typeof post.meta]}
                 </span>
-                <h3 className="text-lg font-medium text-[#FAFAFA] mt-1 group-hover:text-[#C9A96E] transition-colors">
+                <h3 className="text-lg font-medium text-[#2B2B2B] mt-1 group-hover:text-[#B08968] transition-colors">
                   {post.title[locale as keyof typeof post.title]}
                 </h3>
               </Link>

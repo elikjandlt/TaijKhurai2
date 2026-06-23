@@ -125,19 +125,19 @@ export default function HelpPage({ locale }: { locale: string }) {
       <section className="pt-32 pb-16">
         <div className="max-w-[1440px] mx-auto px-12">
           <FadeIn>
-            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#C9A96E] mb-3">
+            <span className="inline-block text-[11px] font-semibold tracking-[3px] text-[#B08968] mb-3">
               {isEn ? "HELP & SUPPORT" : "ТУСЛАМЖ"}
             </span>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="text-[48px] font-light text-[#FAFAFA] mb-6">
+            <h1 className="text-[48px] font-light text-[#2B2B2B] mb-6">
               {isEn ? "How Can We Help?" : "Бид таньд хэрхэн туслах вэ?"}
             </h1>
           </FadeIn>
         </div>
       </section>
 
-      <section className="py-8 bg-[#111111] border-y border-white/5">
+      <section className="py-8 bg-[#E8D8C4] border-y border-[#D4C8B8]">
         <div className="max-w-[1440px] mx-auto px-12">
           <div className="flex items-center gap-3 flex-wrap">
             {tabs.map((tab) => {
@@ -148,8 +148,8 @@ export default function HelpPage({ locale }: { locale: string }) {
                   onClick={() => { setActiveTab(tab.id); setOpenItem(0); }}
                   className={`flex items-center gap-2 px-5 py-2.5 rounded-sm text-sm font-medium transition-colors ${
                     activeTab === tab.id
-                      ? "bg-[#C9A96E] text-[#0D0D0D]"
-                      : "bg-white/[0.05] text-[#B5B0AB] hover:bg-white/10"
+                      ? "bg-[#B08968] text-[#F5EFE6]"
+                      : "bg-[#D4C8B8] text-[#5A5A5A] hover:bg-[#C8B8A8]"
                   }`}
                 >
                   <Icon size={16} />
@@ -165,28 +165,28 @@ export default function HelpPage({ locale }: { locale: string }) {
         <div className="max-w-[900px] mx-auto px-12">
           <FadeIn>
             <div className="flex items-center gap-3 mb-10">
-              <ActiveIcon size={24} className="text-[#C9A96E]" />
-              <h2 className="text-2xl font-light text-[#FAFAFA]">{currentContent.title}</h2>
+              <ActiveIcon size={24} className="text-[#B08968]" />
+              <h2 className="text-2xl font-light text-[#2B2B2B]">{currentContent.title}</h2>
             </div>
           </FadeIn>
 
           <div className="space-y-3">
             {currentContent.items.map((item, i) => (
               <FadeIn key={i} delay={i * 0.05}>
-                <div className="rounded-sm bg-white/[0.03] border border-white/5 overflow-hidden">
+                <div className="rounded-sm bg-[#F5EFE6] border border-[#D4C8B8] shadow-sm overflow-hidden">
                   <button
                     onClick={() => setOpenItem(openItem === i ? null : i)}
-                    className="w-full flex items-center justify-between p-5 text-left hover:bg-white/[0.02] transition-colors"
+                    className="w-full flex items-center justify-between p-5 text-left hover:bg-[#F0E4D6] transition-colors"
                   >
-                    <span className="text-sm font-medium text-[#FAFAFA]">{item.q}</span>
+                    <span className="text-sm font-medium text-[#2B2B2B]">{item.q}</span>
                     <ChevronDown
                       size={18}
-                      className={`text-[#9A9590] transition-transform ${openItem === i ? "rotate-180" : ""}`}
+                      className={`text-[#5A5A5A] transition-transform ${openItem === i ? "rotate-180" : ""}`}
                     />
                   </button>
                   {openItem === i && (
                     <div className="px-5 pb-5">
-                      <p className="text-sm leading-relaxed text-[#B5B0AB]">{item.a}</p>
+                      <p className="text-sm leading-relaxed text-[#5A5A5A]">{item.a}</p>
                     </div>
                   )}
                 </div>
